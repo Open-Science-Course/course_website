@@ -2,10 +2,29 @@
 title: "Open, Reproducible and Transparent Science in Ecology Course"
 ---
 
-This is a Quarto website.
+## Aim
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Universities, journals, and funding bodies increasingly demand **open and reproducible research practices** across the scientific community. 
+Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. 
+All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.
 
-```{r}
-1 + 1
-```
+We are a group of ecologists and statisticians that want to increase the awareness of this in our community and provide education and teaching material on several subjects on open science, reproducibility and transparancey in ecology.
+
+This is a collaboration between University of Bergen, Living Norway, GBIF Norway.
+
+::: {layout-ncol=3}
+
+![](images/UiB_white.png)
+
+![](images/livingN.png)
+
+![](images/gbif-no.png)
+
+:::
+
+
+
+## License
+
+The material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International.
+For more information see [here]().

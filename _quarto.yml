@@ -2,18 +2,26 @@ project:
   type: website
 
 website:
-  title: "ORTSE course"
+  title: "OS course"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - courses.qmd
+      - about_us.qmd
+
+  page-footer:
+    left: "This page is built with ❤️🧠 and [Quarto](https://quarto.org/)."
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [cosmo, style/dsbox.scss]
+      # dark: [cosmo, style/dsbox.scss, style/dark.scss]
     toc: true
+    code-copy: true
+    code-overflow: wrap
+    # mainfont: "Atkinson Hyperlegible"
+    # include-in-header: "style/fontawesome.html"
 
 editor: visual
-
