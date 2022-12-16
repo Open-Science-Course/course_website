@@ -1,32 +1,12 @@
 ---
-title: "Course"
+title: "Courses"
 ---
-
-In the Open, Reproducible and Transparent Course in Ecology, we offer hands-on training on methods and technologies to make research more open, reproducible and transparent. The course is centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. It is aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
 
 The first course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023.
 
-## Course content
-
-The teaching material for this course is available (name repos).
-
-| Topic                          | Content                                                  | Link to material                                          |
-|--------------------------------|----------------------------------------------------------|-----------------------------------------------------------|
-| Introduction to OS             | General introduction to OS                               |                                                           |
-| Tools and approaches           | Data management plan, data papers and registered reports |                                                           |
-|                                | Executable documents with Quarto                         | [BioStats](https://biostats-r.github.io/biostats/quarto/) |
-| Data collection and management | Data collection                                          | BioStats                                                  |
-|                                | Data handling                                            |                                                           |
-|                                | Best practice in coding                                  |                                                           |
-| Data repositories              | GBIF presentations                                       |                                                           |
-|                                | Living Norway R package to publish data                  | repo                                                      |
-| Reproducible workflows         | Version control                                          | [BioStats](https://biostats-r.github.io/biostats/github/) |
-|                                | Reproducible workflows for data analysis (targets)       | will be on Biostats                                       |
-|                                | Best practise in data analysis                           |                                                           |
-|                                | Best practise for reporting scientific results           |                                                           |
-|                                |                                                          |                                                           |
-
 ## Past courses
+
+**OS course 2022, Finse Norway**
 
 ![](images/course_2022.jpg)
 

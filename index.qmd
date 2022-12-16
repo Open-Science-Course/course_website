@@ -10,7 +10,9 @@ All of this aims to improve the efficiency and quality of research and thus to i
 
 We are a group of ecologists and statisticians that want to increase the awareness of this in our community and provide education and teaching material on several subjects on open science, reproducibility and transparancey in ecology.
 
-This is a collaboration between University of Bergen, Living Norway, GBIF Norway.
+## Acknowledgement
+
+This is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo.
 
 ::: {layout-ncol=3}
 
@@ -27,4 +29,4 @@ This is a collaboration between University of Bergen, Living Norway, GBIF Norway
 ## License
 
 The material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International.
-For more information see [here]().
+For more information see [here](https://creativecommons.org/licenses/by/4.0/).
