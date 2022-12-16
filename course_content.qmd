@@ -9,7 +9,7 @@ The Open, Reproducible and Transparent Course in Ecology offers hands-on trainin
 The course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below) under the xx Lisence.
 
 | Topic                          | Content                                                  | Link to material                                          |
-|------------------|---------------------------|----------------------------|
+|--------------------------------|----------------------------------------------------------|-----------------------------------------------------------|
 | Introduction to OS             | General introduction to OS                               |                                                           |
 | Tools and approaches           | Data management plan, data papers and registered reports |                                                           |
 |                                | Executable documents with Quarto                         | [BioStats](https://biostats-r.github.io/biostats/quarto/) |

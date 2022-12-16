@@ -16,9 +16,9 @@
   {
     "objectID": "courses.html",
     "href": "courses.html",
-    "title": "Course",
+    "title": "Courses",
     "section": "",
-    "text": "The Open, Reproducible and Transparent Course in Ecology offers hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. The course is centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. It is aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.\nThe first course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023."
+    "text": "The first course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023."
   },
   {
     "objectID": "courses.html#course-content",
@@ -30,7 +30,7 @@
   {
     "objectID": "courses.html#past-courses",
     "href": "courses.html#past-courses",
-    "title": "Course",
+    "title": "Courses",
     "section": "Past courses",
     "text": "Past courses\nOS course 2022, Finse Norway\n\nIn November, we held a course on Open, Reproducible, and Transparent Science in Ecology at the Biological Research Station at Finse. The course was a collaboration between BioCEED (University of Bergen), GBIF Norway and Living Norway with teachers from NINA, NTNU, UiO and UiB. The course was aimed for PhD students and offered hands-on training, skills and knowledge on Open Science, data collection, data handling, data standards, data repositories and publishing, reproducible workflows and best practice in data analysis.\nOn Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe (Ukraine, Belarus, Georgia), and even from Asia (Armenia, India, Tajikistan). It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.\nWhile the temperature was dropping and the wind was howling, the students were wrangling data, writing code, and executing functions. They recorded frozen species and made their own data collection to understand the importance of also recording metadata (the data around the data). They learned why reproducible workflows, using tools such as quarto, git/GitHub and targets can benefit your future self, increase collaboration and make your research more robust. And finally, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards.\nFive days later, loaded with a toolbox full of new skills the students made their way slowly down the mountain. They were happy and tired and showed a strong motivation to apply the new skills and knowledge in their own work and spread the word about Open Science among their colleagues and supervisors."
   },
@@ -47,5 +47,19 @@
     "title": "Open, Reproducible and Transparent Science in Ecology Course",
     "section": "Acknowledgement",
     "text": "Acknowledgement\nThis is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo."
+  },
+  {
+    "objectID": "course_content.html",
+    "href": "course_content.html",
+    "title": "Content",
+    "section": "",
+    "text": "The Open, Reproducible and Transparent Course in Ecology offers hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. The course is centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. It is aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both."
+  },
+  {
+    "objectID": "course_content.html#course-content",
+    "href": "course_content.html#course-content",
+    "title": "Content",
+    "section": "Course content",
+    "text": "Course content\nThe course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below) under the xx Lisence.\n\n\n\nTopic\nContent\nLink to material\n\n\n\n\nIntroduction to OS\nGeneral introduction to OS\n\n\n\nTools and approaches\nData management plan, data papers and registered reports\n\n\n\n\nExecutable documents with Quarto\nBioStats\n\n\nData collection and management\nData collection\nwill be on BioStats\n\n\n\nData handling\n\n\n\n\nBest practice in coding\n\n\n\nData repositories\nGBIF presentations\n\n\n\n\nLiving Norway R package to publish data\nrepo\n\n\nReproducible workflows\nVersion control\nBioStats\n\n\n\nReproducible workflows for data analysis (targets)\nwill be on Biostats\n\n\n\nBest practise in data analysis\n\n\n\n\nBest practise for reporting scientific results"
   }
 ]
