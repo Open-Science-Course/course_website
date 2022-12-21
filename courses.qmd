@@ -2,11 +2,13 @@
 title: "Courses"
 ---
 
-The first course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023.
+The Open, Reproducible and Transparent Course in Ecology offers hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. The course is centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. It is aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
+
+The first Open Science Course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023.
 
 ## Past courses
 
-**OS course 2022, Finse Norway**
+**OS course 2022, Alpine Research Station Finse in Norway**
 
 ![](images/course_2022.jpg)
 

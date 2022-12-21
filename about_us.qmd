@@ -5,13 +5,14 @@ title: "About Us"
 We are a group of ecologists, statisticians and everything in between, with interests in Open Science, reproducibility and transparency in Ecology.
 
 
-Please add some text and a picture below.
+Please add your text and a picture below.
+Please, add enough text, so that the text block is as tall as the picture!
 
 
-**Anders G. Finstad**
+#### Anders G. Finstad
 
 
-**Aud H. Halbritter**
+#### Aud H. Halbritter
 
 ![](images/aud.jpg){style="float: right;" fig-align="right" width="250"}
 
@@ -19,27 +20,26 @@ I am a researcher in plant ecology at the University of Bergen (Norway) interest
 
 
 
-**Bob OHara**
+#### Bob OHara
 
 
-**Dag Endresen**
+#### Dag Endresen
 
 
-**Erlend Nilsen**
+#### Erlend Nilsen
 
 
-**Joe Chipperfield**
+#### Joe Chipperfield
 
 
-**Katrine Eldegard**
+#### Katrine Eldegard
 
 
-**Matt Grainger**
+#### Matt Grainger
 
 
-**Richard  J. Telford**
+#### Richard  J. Telford
 
 
-**Stefanie Muff**
-
+#### Stefanie Muff
 

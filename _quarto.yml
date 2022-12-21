@@ -8,15 +8,18 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - course_content.qmd
       - courses.qmd
+      - course_content.qmd
       - about_us.qmd
+      - contact.qmd
 
   page-footer:
     left: "This page is built with ❤️🧠 and [Quarto](https://quarto.org/)."
     right:
     - text: "License"
       #href: LICENSE.md
+    - text: "Contact"
+      #href: contact.md
 
 format:
   html:

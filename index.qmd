@@ -1,16 +1,26 @@
 ---
-title: "Open, Reproducible and Transparent Science in Ecology Course"
+title: "Open, Reproducible and Transparent Science in Ecology"
 ---
 
-## Aim
+## The aim
 
 Universities, journals, and funding bodies increasingly demand **open and reproducible research practices** across the scientific community. 
 Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. 
 All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.
 
-We are a group of ecologists and statisticians that want to increase the awareness of this in our community and provide education and teaching material on several subjects on open science, reproducibility and transparancey in ecology.
+[We](@about_us) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparancey in ecology.
 
-## Acknowledgement
+
+## What we do
+
+We organize a [course](@courses) on Open Science for ecologists.
+
+We provide the [teaching material](@course_content) that we use in the Open Science course and other courses openly available.
+
+We develop [tools](@course_content) to facilitate Open Science practices in our community.
+
+
+## Acknowledgements
 
 This is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo.
 
