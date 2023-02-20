@@ -2,14 +2,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Open, Reproducible and Transparent Science in Ecology",
+    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
     "section": "",
     "text": "Universities, journals, and funding bodies increasingly demand open and reproducible research practices across the scientific community. Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.\nWe are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparancey in ecology."
   },
   {
     "objectID": "index.html#license",
     "href": "index.html#license",
-    "title": "Open, Reproducible and Transparent Science in Ecology",
+    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
     "section": "License",
     "text": "License\nThe material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International. For more information see here."
   },
@@ -18,7 +18,7 @@
     "href": "courses.html",
     "title": "Courses",
     "section": "",
-    "text": "The Open, Reproducible and Transparent Course in Ecology offers hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. The course is centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. It is aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.\nThe first Open Science Course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023."
+    "text": "We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. Our courses and workshops are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.\nWe are planning a OS course in autumn 2023."
   },
   {
     "objectID": "courses.html#course-content",
@@ -53,7 +53,7 @@
     "href": "course_content.html",
     "title": "Content",
     "section": "",
-    "text": "The course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below).\n\n\n\nTopic\nContent\nLink to material\n\n\n\n\nIntroduction to OS\nGeneral introduction to OS\nAdd name and link\n\n\nTools and approaches\nData management plan, data papers and registered reports\n\n\n\n\nExecutable documents with Quarto\nBioStats\n\n\nData collection and management\nData collection\nBioStats\n\n\n\nData handling\n\n\n\n\nBest practice in coding\n\n\n\nData repositories\nGBIF presentations\n\n\n\n\nLiving Norway R package to publish data\nLiving Norway repo?\n\n\nReproducible workflows\nVersion control\nBioStats\n\n\n\nReproducible workflows for data analysis (targets)\nGitHub repo, will be moved to BioStats soon\n\n\n\nBest practise in data analysis\n\n\n\n\nBest practise for reporting scientific results"
+    "text": "The course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below).\n\n\n\nTopic\nContent\nLink to material\n\n\n\n\nIntroduction to OS\nGeneral introduction to OS\nErlend\n\n\nTools and approaches\nData management plan, data papers and registered reports\nErlend\n\n\n\nExecutable documents with Quarto\nBioST@TS tutorial\n\n\nData collection and management\nData collection\nBioST@TS tutorial\n\n\n\nData handling\nMatt\n\n\n\nBest practice in coding\nMatt\n\n\nData repositories\nGBIF presentations\nDag\n\n\n\nLiving Norway R package to publish data\nJoe/Matt\n\n\nReproducible workflows\nVersion control\nBioST@TS tutorial\n\n\n\nReproducible workflows for data analysis (targets)\nGitHub repo, will be updated soon\n\n\n\nBest practise in data analysis\nSteffi\n\n\n\nBest practise for reporting scientific results\nSteffi"
   },
   {
     "objectID": "course_content.html#course-content",
@@ -65,14 +65,14 @@
   {
     "objectID": "index.html#what-we-do",
     "href": "index.html#what-we-do",
-    "title": "Open, Reproducible and Transparent Science in Ecology",
+    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
     "section": "What we do",
-    "text": "What we do\nWe organize a course on Open Science for ecologists.\nWe provide the teaching material that we use in the Open Science course and other courses openly available.\nWe develop tools to facilitate Open Science practices in our community."
+    "text": "What we do\nWe organize courses and workshops on Open Science for ecologists.\nWe provide the teaching material that we use in the Open Science course and other courses openly available.\nWe develop tools to facilitate Open Science practices in our community."
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
-    "title": "Open, Reproducible and Transparent Science in Ecology",
+    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nThis is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo."
   },
@@ -81,7 +81,7 @@
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "Community get involved\nStudents: interested in our next course, add to mainling list."
+    "text": "If you want to get involved in out network…\nFor students, if you are interested in our courses and workshops, you can sign up for our mailing lists."
   },
   {
     "objectID": "contact.html#contact-us",
@@ -95,6 +95,13 @@
     "href": "course_content.html#other-resources",
     "title": "Content",
     "section": "Other resources",
-    "text": "Other resources\n\nBES guides\nBioStats\n…"
+    "text": "Other resources\n\nBES guides The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.\nBioST@TS BioST@TS is an online platform with everything you need to know to write your thesis in R."
+  },
+  {
+    "objectID": "courses.html#past-courses-and-workshops",
+    "href": "courses.html#past-courses-and-workshops",
+    "title": "Courses",
+    "section": "Past courses and workshops",
+    "text": "Past courses and workshops\n\nManaging Ecological Data workshop, NØF 2023 (NMBU)\nWe organized a workshop at the NØF 2023 conference at NMBU on Managing ecological data: Best practices for data sharing and data reuse based on transparent and reproducible workflows. The aim of the workshop was to illustrate what data management is and why it is important. We showed best practice in managing ecological data for sharing your own data, applying FAIR principles, and for reusing existing datasets. The workshop included hands-on training tools for sharing data and making reproducible documents.\nThe workshop was aimed at ecologists that create and/or reuse ecological data from early career researchers with little experience with data management to more experienced researchers. The hands-on training will be based on selected case studies, and implemented in statistical program R.\nOrganized by Aud H. Halbritter (University of Bergen), Erlend B. Nilsen (Norwegian Institute for Nature Research and Nord University, and project leader of Living Norway Ecological Data Network) and Matt Grainger (Norwegian Institute for Nature Research).\n\n\nOS course 2022, Alpine Research Station Finse in Norway\n\nIn November, we held a course on Open, Reproducible, and Transparent Science in Ecology at the Biological Research Station at Finse. The course was a collaboration between BioCEED (University of Bergen), GBIF Norway and Living Norway with teachers from NINA, NTNU, UiO and UiB. The course was aimed for PhD students and offered hands-on training, skills and knowledge on Open Science, data collection, data handling, data standards, data repositories and publishing, reproducible workflows and best practice in data analysis.\nOn Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe (Ukraine, Belarus, Georgia), and even from Asia (Armenia, India, Tajikistan). It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.\nWhile the temperature was dropping and the wind was howling, the students were wrangling data, writing code, and executing functions. They recorded frozen species and made their own data collection to understand the importance of also recording metadata (the data around the data). They learned why reproducible workflows, using tools such as quarto, git/GitHub and targets can benefit your future self, increase collaboration and make your research more robust. And finally, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards.\nFive days later, loaded with a toolbox full of new skills the students made their way slowly down the mountain. They were happy and tired and showed a strong motivation to apply the new skills and knowledge in their own work and spread the word about Open Science among their colleagues and supervisors."
   }
 ]

@@ -1,6 +1,7 @@
 ---
-title: "Open, Reproducible and Transparent Science in Ecology"
+title: "NoNOSE - Norwegian Network for Open Science in Ecology"
 ---
+
 
 ## The aim
 
@@ -13,7 +14,7 @@ All of this aims to improve the efficiency and quality of research and thus to i
 
 ## What we do
 
-We organize a [course](@courses) on Open Science for ecologists.
+We organize [courses and workshops](@courses) on Open Science for ecologists.
 
 We provide the [teaching material](@course_content) that we use in the Open Science course and other courses openly available.
 
@@ -24,13 +25,22 @@ We develop [tools](@course_content) to facilitate Open Science practices in our 
 
 This is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo.
 
+::: {layout-ncol=2}
+
+![](images/UiB_white.png){width="300"}
+
+![](images/livingN.png){width="250"}
+
+:::
+
+
 ::: {layout-ncol=3}
 
-![](images/UiB_white.png)
+![](images/gbif-no.png){width="200"}
 
-![](images/livingN.png)
+![](images/nord.jpeg){width="200"}
 
-![](images/gbif-no.png)
+![](images/ntnu_alt_versjon_uten_slagord_svart.png){width="80"}
 
 :::
 

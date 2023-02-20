@@ -2,20 +2,44 @@
 title: "Courses"
 ---
 
-The Open, Reproducible and Transparent Course in Ecology offers hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. The course is centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. It is aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
+We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. 
+Our **courses and workshops** are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. 
+They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
 
-The first Open Science Course was held at the Finse Alpine Research Centre (Norway), in November 2022. The next course will likely be held in autumn 2023.
+We are planning a OS course in autumn 2023.
 
-## Past courses
 
-**OS course 2022, Alpine Research Station Finse in Norway**
+## Past courses and workshops
+
+### Managing Ecological Data workshop, NØF 2023 (NMBU)
+
+We organized a workshop at the NØF 2023 conference at NMBU on *Managing ecological data: Best practices for data sharing and data reuse based on transparent and reproducible workflows*.
+The aim of the workshop was to illustrate what data management is and why it is important.
+We showed best practice in managing ecological data for sharing your own data, applying FAIR principles, and for reusing existing datasets. 
+The workshop included hands-on training tools for sharing data and making reproducible documents.
+
+The workshop was aimed at ecologists that create and/or reuse ecological data from early career researchers with little experience with data management to more experienced researchers. 
+The hands-on training will be based on selected case studies, and implemented in statistical program R.
+
+Organized by Aud H. Halbritter (University of Bergen), Erlend B. Nilsen (Norwegian Institute for Nature Research and Nord University, and project leader of Living Norway Ecological Data Network) and Matt Grainger (Norwegian Institute for Nature Research).
+
+
+### OS course 2022, Alpine Research Station Finse in Norway
 
 ![](images/course_2022.jpg)
 
-In November, we held a course on Open, Reproducible, and Transparent Science in Ecology at the Biological Research Station at Finse. The course was a collaboration between BioCEED (University of Bergen), GBIF Norway and Living Norway with teachers from NINA, NTNU, UiO and UiB. The course was aimed for PhD students and offered hands-on training, skills and knowledge on Open Science, data collection, data handling, data standards, data repositories and publishing, reproducible workflows and best practice in data analysis.
+In November, we held a course on Open, Reproducible, and Transparent Science in Ecology at the Biological Research Station at Finse. 
+The course was a collaboration between BioCEED (University of Bergen), GBIF Norway and Living Norway with teachers from NINA, NTNU, UiO and UiB. 
+The course was aimed for PhD students and offered hands-on training, skills and knowledge on Open Science, data collection, data handling, data standards, data repositories and publishing, reproducible workflows and best practice in data analysis.
 
-On Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe (Ukraine, Belarus, Georgia), and even from Asia (Armenia, India, Tajikistan). It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.
+On Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. 
+The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe (Ukraine, Belarus, Georgia), and even from Asia (Armenia, India, Tajikistan). 
+It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.
 
-While the temperature was dropping and the wind was howling, the students were wrangling data, writing code, and executing functions. They recorded frozen species and made their own data collection to understand the importance of also recording metadata (the data around the data). They learned why reproducible workflows, using tools such as quarto, git/GitHub and targets can benefit your future self, increase collaboration and make your research more robust. And finally, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards.
+While the temperature was dropping and the wind was howling, the students were wrangling data, writing code, and executing functions. 
+They recorded frozen species and made their own data collection to understand the importance of also recording metadata (the data around the data). 
+They learned why reproducible workflows, using tools such as quarto, git/GitHub and targets can benefit your future self, increase collaboration and make your research more robust. 
+And finally, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards.
 
-Five days later, loaded with a toolbox full of new skills the students made their way slowly down the mountain. They were happy and tired and showed a strong motivation to apply the new skills and knowledge in their own work and spread the word about Open Science among their colleagues and supervisors.
+Five days later, loaded with a toolbox full of new skills the students made their way slowly down the mountain. 
+They were happy and tired and showed a strong motivation to apply the new skills and knowledge in their own work and spread the word about Open Science among their colleagues and supervisors.
