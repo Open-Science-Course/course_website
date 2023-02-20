@@ -14,12 +14,12 @@ website:
       - contact.qmd
 
   page-footer:
-    left: "This page is built with ❤️🧠 and [Quarto](https://quarto.org/)."
+    left: "This page is built with ❤️🧠, some 🪄 and [Quarto](https://quarto.org/)."
     right:
     - text: "License"
       #href: LICENSE.md
     - text: "Contact"
-      #href: contact.md
+      href: contact.qmd
 
 format:
   html:

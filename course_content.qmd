@@ -6,24 +6,23 @@ title: "Content"
 
 The course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below).
 
-| Topic                          | Content                                                  | Link to material                                                      |
+| Topic                          | Content                                                  | Link to material                                                           |
 |-------------------|--------------------------|---------------------------|
-| Introduction to OS             | General introduction to OS                               | [Add name and link](link)                                             |
-| Tools and approaches           | Data management plan, data papers and registered reports |                                                                       |
-|                                | Executable documents with Quarto                         | [BioStats](https://biostats-r.github.io/biostats/quarto/)             |
-| Data collection and management | Data collection                                          | [BioStats](https://biostats-r.github.io/biostats/datacollection/)     |
-|                                | Data handling                                            |                                                                       |
-|                                | Best practice in coding                                  |                                                                       |
-| Data repositories              | GBIF presentations                                       |                                                                       |
-|                                | Living Norway R package to publish data                  | Living Norway repo?                                                   |
-| Reproducible workflows         | Version control                                          | [BioStats](https://biostats-r.github.io/biostats/github/)             |
-|                                | Reproducible workflows for data analysis (targets)       | [GitHub repo](add%20link%20to%20repo), will be moved to BioStats soon |
-|                                | Best practise in data analysis                           |                                                                       |
-|                                | Best practise for reporting scientific results           |                                                                       |
-|                                |                                                          |                                                                       |
+| Introduction to OS             | General introduction to OS                               | Erlend                                                                     |
+| Tools and approaches           | Data management plan, data papers and registered reports | Erlend                                                                     |
+|                                | Executable documents with Quarto                         | [BioST@TS tutorial](https://biostats-r.github.io/biostats/quarto/)         |
+| Data collection and management | Data collection                                          | [BioST@TS tutorial](https://biostats-r.github.io/biostats/datacollection/) |
+|                                | Data handling                                            | Matt                                                                       |
+|                                | Best practice in coding                                  | Matt                                                                       |
+| Data repositories              | GBIF presentations                                       | Dag                                                                        |
+|                                | Living Norway R package to publish data                  | Joe/Matt                                                                   |
+| Reproducible workflows         | Version control                                          | [BioST@TS tutorial](https://biostats-r.github.io/biostats/github/)         |
+|                                | Reproducible workflows for data analysis (targets)       | [GitHub repo](add%20link%20to%20repo), will be updated soon                |
+|                                | Best practise in data analysis                           | Steffi                                                                     |
+|                                | Best practise for reporting scientific results           | Steffi                                                                     |
+|                                |                                                          |                                                                            |
 
 ## Other resources
 
--   BES guides
--   BioStats
--   ...
+-   [BES guides](https://www.britishecologicalsociety.org/publications/guides-to/) The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.
+-   [BioST@TS](https://biostats-r.github.io/biostats/) BioST@TS is an online platform with everything you need to know to write your thesis in R.
