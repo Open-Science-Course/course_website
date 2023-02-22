@@ -2,15 +2,11 @@
 title: "NoNOSE - Norwegian Network for Open Science in Ecology"
 ---
 
-
 ## The aim
 
-Universities, journals, and funding bodies increasingly demand **open and reproducible research practices** across the scientific community. 
-Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. 
-All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.
+Universities, journals, and funding bodies increasingly demand **open and reproducible research practices** across the scientific community. Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.
 
 [We](@about_us) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparancey in ecology.
-
 
 ## What we do
 
@@ -20,33 +16,24 @@ We provide the [teaching material](@course_content) that we use in the Open Scie
 
 We develop [tools](@course_content) to facilitate Open Science practices in our community.
 
-
 ## Acknowledgements
 
 This is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo.
 
-::: {layout-ncol=2}
-
-![](images/UiB_white.png){width="300"}
+::: {layout-ncol="3"}
+![![](images/NINA.png){width="150"}](images/UiB_white.png){width="300"}
 
 ![](images/livingN.png){width="250"}
-
 :::
 
-
-::: {layout-ncol=3}
-
+::: {layout-ncol="3"}
 ![](images/gbif-no.png){width="200"}
 
 ![](images/nord.jpeg){width="200"}
 
 ![](images/ntnu_alt_versjon_uten_slagord_svart.png){width="80"}
-
 :::
-
-
 
 ## License
 
-The material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International.
-For more information see [here](https://creativecommons.org/licenses/by/4.0/).
+The material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International. For more information see [here](https://creativecommons.org/licenses/by/4.0/).
