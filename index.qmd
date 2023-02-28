@@ -10,11 +10,11 @@ Universities, journals, and funding bodies increasingly demand **open and reprod
 
 ## What we do
 
-We organize [courses and workshops](@courses) on Open Science for ecologists.
+We organize [courses and workshops](courses) on Open Science for ecologists.
 
-We provide the [teaching material](@course_content) that we use in the Open Science course and other courses openly available.
+We provide the [teaching material](course_content) that we use in the Open Science course and other courses openly available.
 
-We develop [tools](@course_content) to facilitate Open Science practices in our community.
+We develop [tools](course_content) to facilitate Open Science practices in our community.
 
 ## Acknowledgements
 
