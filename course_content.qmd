@@ -4,22 +4,24 @@ title: "Content"
 
 ## Course content
 
-The course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below).
+The course curriculum contains theory and interactive exercises as outlined in the table below. 
+This is the curriculum for all the OSTE courses and workshops.
+The teaching material is openly available (see links below).
 
 | Topic                          | Content                                                  | Link to material                                                            |
-|--------------------------------|----------------------------------------------------------|-----------------------------------------------------------------------------|
-| Introduction to OS             | General introduction to OS                               | Erlend                                                                      |
-| Tools and approaches           | Data management plan, data papers and registered reports | Erlend                                                                      |
+|-----------------|------------------------|-------------------------------|
+| Introduction to OS             | General introduction to OS                               | is coming soon                                                                      |
+| Tools and approaches           | Data management plan, data papers and registered reports | is coming soon                                                                      |
 |                                | Executable documents with Quarto                         | [BioST\@TS tutorial](https://biostats-r.github.io/biostats/quarto/)         |
 | Data collection and management | Data collection                                          | [BioST\@TS tutorial](https://biostats-r.github.io/biostats/datacollection/) |
-|                                | Data handling                                            | Matt                                                                        |
-|                                | Best practice in coding                                  | Matt                                                                        |
-| Data repositories              | GBIF presentations                                       | Dag                                                                         |
-|                                | Living Norway R package to publish data                  | Joe/Matt                                                                    |
+|                                | Data handling                                            | [OS Repo](https://github.com/Open-Science-Course/OS-course-teaching-material)                                                                        |
+|                                | Best practice in coding                                  | is coming soon                                                                        |
+| Data repositories              | GBIF presentations                                       | is coming soon                                                                         |
+|                                | Living Norway R package to publish data                  | is coming soon                                                                    |
 | Reproducible workflows         | Version control                                          | [BioST\@TS tutorial](https://biostats-r.github.io/biostats/github/)         |
 |                                | Reproducible workflows for data analysis (targets)       | [GitHub repo](add%20link%20to%20repo), will be updated soon                 |
-|                                | Best practise in data analysis                           | Steffi                                                                      |
-|                                | Best practise for reporting scientific results           | Steffi                                                                      |
+|                                | Best practise in data analysis                           | [OS Repo](https://github.com/Open-Science-Course/OS-course-teaching-material)                                                                      |
+|                                | Best practise for reporting scientific results           | [OS Repo](https://github.com/Open-Science-Course/OS-course-teaching-material)                                                                      |
 |                                |                                                          |                                                                             |
 
 ## Other resources

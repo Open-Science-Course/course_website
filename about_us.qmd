@@ -4,17 +4,17 @@ title: "About Us"
 
 We are a group of ecologists, statisticians and everything in between, with interests in Open Science, reproducibility and transparency in Ecology.
 
-Please add your text and a picture below. Please, add enough text, so that the text block is as tall as the picture!
-
-#### Anders G. Finstad
-
 #### Aud H. Halbritter
 
 ![](images/aud.jpg){style="float: right;" fig-align="right" width="250"}
 
 I am a researcher in plant ecology at the University of Bergen (Norway) interested in global change impacts on alpine biodiversity and ecosystem functions. For the last eight years, I have been part of developing bioST\@TS, an online teaching and learning platform on data management and analysis for biology students. More recently, I have engaged in Open Science practice in my own research, supervision and teaching. And I organized the first Open Science Course.
 
-#### Bob OHara
+#### Matt Grainger
+
+![](images/Matt.jpeg){style="float: right;" fig-align="left" width="178"}
+
+I am a researcher at NINA (Norwegian Institute for Nature Research) interested in evidence-based conservation and in metascience ("the science of science"). I am a part of the Living Norway Ecological Data Network and within that project focus on developing tools (e.g. R packages, Shiny Apps, etc.) and workflows to help researchers share their data openly and to make use of open data in their research. I am a member of the ESHackathon, an interdisciplinary community of practice making evidence-based decisions easier to achieve through opensource software, and SORTEE (Society for Open, Repeatable and Transparent Ecology and Evolution).
 
 #### Dag Endresen
 
@@ -24,12 +24,10 @@ I am a researcher in plant ecology at the University of Bergen (Norway) interest
 
 #### Katrine Eldegard
 
-#### Matt Grainger
-
-![](images/Matt.jpeg){style="float: right;" fig-align="right" width="178"}
-
-I am a researcher at NINA (Norwegian Institute for Nature Research) interested in evidence-based conservation and in metascience ("the science of science"). I am a part of the Living Norway Ecological Data Network and within that project focus on developing tools (e.g. R packages, Shiny Apps, etc.) and workflows to help researchers share their data openly and to make use of open data in their research. I am a member of the ESHackathon, an interdisciplinary community of practice making evidence-based decisions easier to achieve through opensource software, and SORTEE (Society for Open, Repeatable and Transparent Ecology and Evolution).
-
 #### Richard J. Telford
 
 #### Stefanie Muff
+
+#### Anders G. Finstad
+
+#### Bob OHara

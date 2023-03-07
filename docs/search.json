@@ -2,14 +2,14 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
+    "title": "Living Norway Open Science Training",
     "section": "",
-    "text": "Universities, journals, and funding bodies increasingly demand open and reproducible research practices across the scientific community. Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.\nWe are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparancey in ecology."
+    "text": "Universities, journals, and funding bodies increasingly demand open and reproducible research practices across the scientific community. Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.\nWe are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparency in ecology."
   },
   {
     "objectID": "index.html#license",
     "href": "index.html#license",
-    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
+    "title": "Living Norway Open Science Training",
     "section": "License",
     "text": "License\nThe material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International. For more information see here."
   },
@@ -18,7 +18,7 @@
     "href": "courses.html",
     "title": "Courses",
     "section": "",
-    "text": "We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. Our courses and workshops are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.\nWe are planning a OS course in autumn 2023."
+    "text": "We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. Our courses and workshops are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both."
   },
   {
     "objectID": "courses.html#course-content",
@@ -39,7 +39,7 @@
     "href": "about_us.html",
     "title": "About Us",
     "section": "",
-    "text": "We are a group of ecologists, statisticians and everything in between, with interests in Open Science, reproducibility and transparency in Ecology.\nPlease add your text and a picture below. Please, add enough text, so that the text block is as tall as the picture!\n\nAnders G. Finstad\n\n\nAud H. Halbritter\n\n\n\n\n\nI am a researcher in plant ecology at the University of Bergen (Norway) interested in global change impacts on alpine biodiversity and ecosystem functions. For the last eight years, I have been part of developing bioST@TS, an online teaching and learning platform on data management and analysis for biology students. More recently, I have engaged in Open Science practice in my own research, supervision and teaching. And I organized the first Open Science Course.\n\n\nBob OHara\n\n\nDag Endresen\n\n\nErlend Nilsen\n\n\nJoe Chipperfield\n\n\nKatrine Eldegard\n\n\nMatt Grainger\n\n\n\n\n\nI am a researcher at NINA (Norwegian Institute for Nature Research) interested in evidence-based conservation and in metascience (“the science of science”). I am a part of the Living Norway Ecological Data Network and within that project focus on developing tools (e.g. R packages, Shiny Apps, etc.) and workflows to help researchers share their data openly and to make use of open data in their research. I am a member of the ESHackathon, an interdisciplinary community of practice making evidence-based decisions easier to achieve through opensource software, and SORTEE (Society for Open, Repeatable and Transparent Ecology and Evolution).\n\n\nRichard J. Telford\n\n\nStefanie Muff"
+    "text": "We are a group of ecologists, statisticians and everything in between, with interests in Open Science, reproducibility and transparency in Ecology.\n\nAud H. Halbritter\n\n\n\n\n\nI am a researcher in plant ecology at the University of Bergen (Norway) interested in global change impacts on alpine biodiversity and ecosystem functions. For the last eight years, I have been part of developing bioST@TS, an online teaching and learning platform on data management and analysis for biology students. More recently, I have engaged in Open Science practice in my own research, supervision and teaching. And I organized the first Open Science Course.\n\n\nMatt Grainger\n\n\n\n\n\nI am a researcher at NINA (Norwegian Institute for Nature Research) interested in evidence-based conservation and in metascience (“the science of science”). I am a part of the Living Norway Ecological Data Network and within that project focus on developing tools (e.g. R packages, Shiny Apps, etc.) and workflows to help researchers share their data openly and to make use of open data in their research. I am a member of the ESHackathon, an interdisciplinary community of practice making evidence-based decisions easier to achieve through opensource software, and SORTEE (Society for Open, Repeatable and Transparent Ecology and Evolution).\n\n\nDag Endresen\n\n\nErlend Nilsen\n\n\nJoe Chipperfield\n\n\nKatrine Eldegard\n\n\nRichard J. Telford\n\n\nStefanie Muff\n\n\nAnders G. Finstad\n\n\nBob OHara"
   },
   {
     "objectID": "index.html#acknowledgement",
@@ -53,7 +53,7 @@
     "href": "course_content.html",
     "title": "Content",
     "section": "",
-    "text": "The course curriculum contains theory and interactive exercises as outlined in the table below. The teaching material is openly available (see links below).\n\n\n\nTopic\nContent\nLink to material\n\n\n\n\nIntroduction to OS\nGeneral introduction to OS\nErlend\n\n\nTools and approaches\nData management plan, data papers and registered reports\nErlend\n\n\n\nExecutable documents with Quarto\nBioST@TS tutorial\n\n\nData collection and management\nData collection\nBioST@TS tutorial\n\n\n\nData handling\nMatt\n\n\n\nBest practice in coding\nMatt\n\n\nData repositories\nGBIF presentations\nDag\n\n\n\nLiving Norway R package to publish data\nJoe/Matt\n\n\nReproducible workflows\nVersion control\nBioST@TS tutorial\n\n\n\nReproducible workflows for data analysis (targets)\nGitHub repo, will be updated soon\n\n\n\nBest practise in data analysis\nSteffi\n\n\n\nBest practise for reporting scientific results\nSteffi"
+    "text": "The course curriculum contains theory and interactive exercises as outlined in the table below. This is the curriculum for all the OSTE courses and workshops. The teaching material is openly available (see links below).\n\n\n\nTopic\nContent\nLink to material\n\n\n\n\nIntroduction to OS\nGeneral introduction to OS\nis coming soon\n\n\nTools and approaches\nData management plan, data papers and registered reports\nis coming soon\n\n\n\nExecutable documents with Quarto\nBioST@TS tutorial\n\n\nData collection and management\nData collection\nBioST@TS tutorial\n\n\n\nData handling\nOS Repo\n\n\n\nBest practice in coding\nis coming soon\n\n\nData repositories\nGBIF presentations\nis coming soon\n\n\n\nLiving Norway R package to publish data\nis coming soon\n\n\nReproducible workflows\nVersion control\nBioST@TS tutorial\n\n\n\nReproducible workflows for data analysis (targets)\nGitHub repo, will be updated soon\n\n\n\nBest practise in data analysis\nOS Repo\n\n\n\nBest practise for reporting scientific results\nOS Repo"
   },
   {
     "objectID": "course_content.html#course-content",
@@ -65,23 +65,23 @@
   {
     "objectID": "index.html#what-we-do",
     "href": "index.html#what-we-do",
-    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
+    "title": "Living Norway Open Science Training",
     "section": "What we do",
     "text": "What we do\nWe organize courses and workshops on Open Science for ecologists.\nWe provide the teaching material that we use in the Open Science course and other courses openly available.\nWe develop tools to facilitate Open Science practices in our community."
   },
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
-    "title": "NoNOSE - Norwegian Network for Open Science in Ecology",
+    "title": "Living Norway Open Science Training",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nThis is a collaboration between bioCEED, GBIF Norway, Living Norway, Nord University, Norwegian Institute for Nature Research (NINA), Norwegian University of Life Science, and Norwegian University of Science and Technology, University of Bergen, and University of Oslo."
+    "text": "Acknowledgements\nOpen Science Training is part of the Living Norway Ecological Data Network and a collaboration with the University of Bergen, Nord University, GBIF Norway, Norwegian University of Science and Technology, Norwegian University of Life Science, University of Oslo and Norwegian Institute for Nature Research."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
     "title": "Contact",
     "section": "",
-    "text": "If you want to get involved in out network…\nFor students, if you are interested in our courses and workshops, you can sign up for our mailing lists."
+    "text": "If you are interested in the Living Norway Open Science Teaching network and want to get involved please contact us (see below).\nFor students: if you are interested in our courses and workshops, you can sign up for our mailing lists here"
   },
   {
     "objectID": "contact.html#contact-us",
@@ -103,5 +103,180 @@
     "title": "Courses",
     "section": "Past courses and workshops",
     "text": "Past courses and workshops\n\nManaging Ecological Data workshop, NØF 2023 (NMBU)\nWe organized a workshop at the NØF 2023 conference at NMBU on Managing ecological data: Best practices for data sharing and data reuse based on transparent and reproducible workflows. The aim of the workshop was to illustrate what data management is and why it is important. We showed best practice in managing ecological data for sharing your own data, applying FAIR principles, and for reusing existing datasets. The workshop included hands-on training tools for sharing data and making reproducible documents.\nThe workshop was aimed at ecologists that create and/or reuse ecological data from early career researchers with little experience with data management to more experienced researchers. The hands-on training will be based on selected case studies, and implemented in statistical program R.\nOrganized by Aud H. Halbritter (University of Bergen), Erlend B. Nilsen (Norwegian Institute for Nature Research and Nord University, and project leader of Living Norway Ecological Data Network) and Matt Grainger (Norwegian Institute for Nature Research).\n\n\nOS course 2022, Alpine Research Station Finse in Norway\n\nIn November, we held a course on Open, Reproducible, and Transparent Science in Ecology at the Biological Research Station at Finse. The course was a collaboration between BioCEED (University of Bergen), GBIF Norway and Living Norway with teachers from NINA, NTNU, UiO and UiB. The course was aimed for PhD students and offered hands-on training, skills and knowledge on Open Science, data collection, data handling, data standards, data repositories and publishing, reproducible workflows and best practice in data analysis.\nOn Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe (Ukraine, Belarus, Georgia), and even from Asia (Armenia, India, Tajikistan). It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.\nWhile the temperature was dropping and the wind was howling, the students were wrangling data, writing code, and executing functions. They recorded frozen species and made their own data collection to understand the importance of also recording metadata (the data around the data). They learned why reproducible workflows, using tools such as quarto, git/GitHub and targets can benefit your future self, increase collaboration and make your research more robust. And finally, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards.\nFive days later, loaded with a toolbox full of new skills the students made their way slowly down the mountain. They were happy and tired and showed a strong motivation to apply the new skills and knowledge in their own work and spread the word about Open Science among their colleagues and supervisors."
+  },
+  {
+    "objectID": "courses.html#upcoming-courses-and-workshops",
+    "href": "courses.html#upcoming-courses-and-workshops",
+    "title": "Courses",
+    "section": "Upcoming courses and workshops",
+    "text": "Upcoming courses and workshops\nWe are planning a OSTE course in autumn 2023."
+  },
+  {
+    "objectID": "bestPracticeAnalysis/Rcode_exercise/ModelSelectionBias.html",
+    "href": "bestPracticeAnalysis/Rcode_exercise/ModelSelectionBias.html",
+    "title": "Model selection bias example using automatic AIC minimization",
+    "section": "",
+    "text": "The purpose of this document is to illustrate how model selection using AIC minimization can lead to model selection bias.\nLoad libraries\n\nlibrary(MASS)\n\nset.seed(123456)\n\nGenerate a data set with 51 independent normally distributed variables (columns) for 100 observations (rows)\n\ndata <- data.frame(matrix(rnorm(51*100),ncol=51))\n\nColumn 51 is thereby the response (that’s a random choice)\n\nnames(data)[51] <- \"Y\"\n\nFit a regression of Y against all the 50 covariates and then look at how the p-values are distributed\n\nr.lm <- lm(Y~.,data)\n\nAs expected, the distribution of the p-values is (more or less) uniform between 0 and 1, none of them below 0.05:\n\npar(mfrow=c(1,2))\nhist(summary(r.lm)$coef[-1,1],freq=T,main=\"50 variables\",xlab=\"Effect sizes\")\nhist(summary(r.lm)$coef[-1,4],freq=T,main=\"50 variables\",xlab=\"p-values\")\n\n\n\n\nThen use AICc minimization to obtain the objectively “best” model:\n\nr.AICmin <- stepAIC(r.lm, direction = c(\"both\"), trace = FALSE,AICc=TRUE)\n\npar(mfrow=c(1,2))\nhist(summary(r.AICmin)$coef[-1,1],freq=T,main=\"Minimal AICc model\",xlab=\"Effect sizes\")\nhist(summary(r.AICmin)$coef[-1,4],freq=T,main=\"Minimal AICc model\",xlab=\"p-values\",xlim=c(0,1))\n\n\n\n\nThe distribution of the p-values is now skewed: many of them reach rather small values (seven have \\(p < 0.05\\)). This happened although none of the variables has any explanatory power!"
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html",
+    "title": "Best practices in data analysis",
+    "section": "",
+    "text": "\\(~\\)\n\n“Best practices in data analysis” is a huge field.\n\n\\(~\\)\n\nToday: some words on model selection."
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#developing-a-model",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#developing-a-model",
+    "title": "Best practices in data analysis",
+    "section": "Developing a model",
+    "text": "Developing a model\n\\(~\\)\nIn statistics courses, the correct models often “fall from heaven”: The model family and the terms in the model were almost always given.\n\\(~\\)\nHowever, it is often not immediately obvious which terms are relevant to include in a model.\n\\(~\\)\nImportantly, the approach to find a model heavily depends on the aim for which the model is built.\n\\(~\\)\nThe following distinction is important:\n\nThe aim is to future values of \\(y\\) from known regressors.\nThe aim is to \\(y\\) using known regressors. Ultimately, the aim is to find causal relationships.\n\n\n\\(\\rightarrow\\) Even among statisticians there is no real consensus about how, if, or when to select a model:\n \nNote: The first sentence of a paper in Methods in Ecology and Evolution from 2016 is: ``Model selection is difficult.’’\n\nWhy is finding a model so hard?\n\\(~\\)\nNote that a model is only an approximation to reality. The aim of a data analysis is to understand something about the real world thanks to simplifications.\n\\(~\\)\nBox (1979): ``All models are wrong, but some are useful.’’\n\\(~\\)\n\\(\\rightarrow\\) There is often not a “right” or a “wrong” model – but there are more and less useful ones.\n\\(\\rightarrow\\) Finding a model with good properties is sometimes an art…"
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#two-examples",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#two-examples",
+    "title": "Best practices in data analysis",
+    "section": "Two examples",
+    "text": "Two examples\n\\(~\\)\n\nUnderstanding the effect of mercury (Hg) in the soil Research question: Is the Hg level in the environment (soil) of people’s homes associated to the Hg levels in their bodies (urin, hair)?\nMethod: Measurements of Hg concentrations on people’s properties, as well as measurements and survey of children and their mothers living on these properties.\n\n\\(~\\)\n\nPrognostic factors for body fat\nResearch question: Which factors allow for precise estimation (prediction) of body fat?\nMethod: Study with 241 male participants. Measured variable were, among others, body fat (%), age, weight, body size, BMI, neck thickness and abdominal girth."
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#predictive-and-explanatory-models",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#predictive-and-explanatory-models",
+    "title": "Best practices in data analysis",
+    "section": "Predictive and explanatory models",
+    "text": "Predictive and explanatory models\n\\(~\\)\nBefore we continue to discuss model/variable selection, we need to be clear about the scope of the model:\n\\(~\\)\n\n: These are models that aim to predict the outcome of future subjects.\nExample: In the bodyfat example the aim is to predict people’s bodyfat from factors that are easy to measure (age, BMI, weight,..).\n\n\\(~\\)\n\n: These are models that aim at understanding the (causal) relationship between covariates and the response.\nExample: The mercury study aims to understand if Hg-concentrations in the soil (covariable) influence the Hg-concentrations in humans (response).\n\n\\(~\\)\n\\(\\rightarrow\\) The model selection strategy depends on this distinction."
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#prediction-vs-explanation",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#prediction-vs-explanation",
+    "title": "Best practices in data analysis",
+    "section": "Prediction vs explanation",
+    "text": "Prediction vs explanation\n\\(~\\)\n\nWhen the aim is , the best model is the one that best predicts the fate of a future subject. This is a well defined task and “objective” variable selection strategies to find the model which is best in this sense are potentially useful.\n\n\\(~\\)\n\nHowever, when used for the best model will depend on the scientific question being asked, and automatic variable selection strategies have no place.\n\n\\(~\\)\n(Clayton and Hills 1993)"
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#model-selection-for-predictive-models",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#model-selection-for-predictive-models",
+    "title": "Best practices in data analysis",
+    "section": "Model selection for predictive models",
+    "text": "Model selection for predictive models\n\\(~\\)\n\nCross-validation (CV)\n\n\\(~\\)\n\nAIC, BIC, DIC, …\n\n\\(~\\)\n\nIf you want, even forward and backward selection is ok.\n\n\\(~\\)\n\nAny (other) optimization procedure of some “cost function”."
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#model-selection-for-explanatory-models",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#model-selection-for-explanatory-models",
+    "title": "Best practices in data analysis",
+    "section": "Model selection for explanatory models?",
+    "text": "Model selection for explanatory models?\n\\(~\\)\n\\(~\\) See, e.g., (Freedman 1983) and (Copas 1983).\n\n\\(~\\)\n“Explanation” means that you will want to interpret the regression coefficients, 95% CIs and \\(p\\)-values. It is then often assumed that some sort of causality (\\(x\\rightarrow y\\)) exists.\n\\(~\\)\nIn such a situation, you should formulate a :\n\\(~\\)\nYou might consider pre-registration.\n\nConfirmatory models have a long tradition medicine. In fact, the main conclusions in a study are only allowed to be drawn from the main model (which needs to be specified even before data are collected):\n \\(~\\)\n(Clayton and Hills 1993)"
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#model-selection-bias-coded-example",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#model-selection-bias-coded-example",
+    "title": "Best practices in data analysis",
+    "section": "Model selection bias – coded example",
+    "text": "Model selection bias – coded example\n\\(~\\)\nhttps://github.com/stefaniemuff/statlearning/tree/master/OpenScience/bestPracticeAnalysis/Rcode_exercise\n\\(~\\)"
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#confirmatory-vs.-exploratory",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#confirmatory-vs.-exploratory",
+    "title": "Best practices in data analysis",
+    "section": "Confirmatory vs. exploratory",
+    "text": "Confirmatory vs. exploratory\n\\(~\\)\nAny additional analyses that you potentially do with your data have the character of exploratory models.\n\\(\\rightarrow\\) Two sorts of explanatory models/analyses:\n:\n:"
+  },
+  {
+    "objectID": "bestPracticeAnalysis/bestPracticeAnalysis.html#summary",
+    "href": "bestPracticeAnalysis/bestPracticeAnalysis.html#summary",
+    "title": "Best practices in data analysis",
+    "section": "Summary",
+    "text": "Summary"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html",
+    "href": "bestPracticeResults/bestPracticeResults.html",
+    "title": "Best practices for reporting scientific results",
+    "section": "",
+    "text": "\\(~\\)\n\n\n\nASA statement\n\n\n\\(~\\)\n(Wasserstein and Lazar 2016)"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#lots-of-publications-in-the-past-decades",
+    "href": "bestPracticeResults/bestPracticeResults.html#lots-of-publications-in-the-past-decades",
+    "title": "Best practices for reporting scientific results",
+    "section": "Lots of publications in the past decades…",
+    "text": "Lots of publications in the past decades…\n\\(~\\)\n \n\\(~\\)\nIoannidis (2005), Goodman (2008), Nuzzo (2014), Amrhein, Greenland, and McShane (2019), …"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#p-values-statistical-significance-criticism",
+    "href": "bestPracticeResults/bestPracticeResults.html#p-values-statistical-significance-criticism",
+    "title": "Best practices for reporting scientific results",
+    "section": "\\(P\\)-values / statistical significance criticism",
+    "text": "\\(P\\)-values / statistical significance criticism\n\\(~\\)\n\\(P\\)-value criticism is as old as statistical significance testing (1920s!). Issues:\n\\(~\\)\n\nThe sharp line \\(p<0.05\\) is arbitrary.\n\n\\(~\\)\n\n\\(P\\)-hacking / data dredging: Search until you find a result with \\(p<0.05\\).\n\n\\(~\\)\n\nPublication bias: Studies with \\(p<0.05\\) are more likely to be published than ``non-significant’’ results.\n\n\\(~\\)\n\nHARKING: Hypothesizing After the Results are Known.\n\n\\(~\\)\n\nModel selection using \\(p\\)-values \\(\\rightarrow\\) model selection bias.\n\n\nNote: R.A. Fisher, the “inventor” of the \\(p\\)-value (1920s) didn’t mean the \\(p\\)-value to be used in the way it is used today, which is: doing a single experiment and use \\(p<0.05\\) for a conclusion.\n\\(~\\)\nFrom Goodman (2016):\n\\(~\\)\n\nFisher used “significance” merely to indicate that an observation was worth following up, with refutation of the null hypothesis justified only if further experiments “rarely failed” to achieve significance. This is in stark contrast to the modern practice of making claims based on a single demonstration of statistical significance.\n\n\\(~\\)"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#right-or-wrong",
+    "href": "bestPracticeResults/bestPracticeResults.html#right-or-wrong",
+    "title": "Best practices for reporting scientific results",
+    "section": "Right or wrong?",
+    "text": "Right or wrong?\n\\(~\\)\nGo to www.menti.com and use code 3944 9342.\nWhich of these statements are right or wrong?\n\\(~\\)\n\nThe \\(p\\)-value is the probability that the null hypothesis is true.\n\n\n\\(p=0.02\\) means that the alternative hypothesis is true with 98% probability.\n\n\nThe \\(p\\)-value is the type-1 error rate.\n\n\nThe \\(p\\)-value is the probability that the result happened by chance.\n\n\nIf \\(p>0.05\\), we can conclude that there is no effect.\n\n\nTwo studies with \\(p>0.05\\) and \\(p<0.05\\) are in a conflict."
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#significance-thresholding-is-arbitrary",
+    "href": "bestPracticeResults/bestPracticeResults.html#significance-thresholding-is-arbitrary",
+    "title": "Best practices for reporting scientific results",
+    "section": "Significance thresholding is arbitrary",
+    "text": "Significance thresholding is arbitrary\n\\(~\\)\n\nIs there a significant difference between \\(p=0.049\\) and \\(p=0.051\\)…??\n\n\nNo:  \n\n\nDoes \\(p>0.05\\) automatically imply that a variable is unimportant or that it has no effect?\n\n\nNo: (Altman and Bland 1995). \n\n\\(~\\)\nReasons for large \\(p\\)-values:\n\nLow sample size (\\(\\rightarrow\\) low power).\nThe truth is not far from the null hypothesis.\nCollinear covariates.\n\n\n\\(~\\)\n\n“Statistical significance” is often used almost synonymously with “there is an effect”.\n\n\nBut we all know: Correlation is not causation."
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#significance-vs-relevance",
+    "href": "bestPracticeResults/bestPracticeResults.html#significance-vs-relevance",
+    "title": "Best practices for reporting scientific results",
+    "section": "Significance vs relevance",
+    "text": "Significance vs relevance\n\\(~\\)\nPaul D. Ellis in The Essential Guide to Effect Sizes (2010, chapter 2):\n\nIndeed, statistical significance, which partly reflects sample size, may say nothing at all about the practical significance of a result. [….] To extract meaning from their results […] scientists need to look beyond \\(p\\) values and effect sizes and make informed judgments about what they see.\n\n\n\nA low \\(p\\)-value does not automatically imply that a variable is ``important’’ – and vice versa.\n\n\n``Is there an effect?’’ v.s. ‘’How much of an effect is there?’’.\n\n\\(~\\)\n\nGoodman (2008)\n\\(~\\)\nProblem: The \\(p\\)-value blands the estimated effect size with its uncertainty."
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#shall-we-abolish-p-values",
+    "href": "bestPracticeResults/bestPracticeResults.html#shall-we-abolish-p-values",
+    "title": "Best practices for reporting scientific results",
+    "section": "Shall we abolish \\(p\\)-values?",
+    "text": "Shall we abolish \\(p\\)-values?\n\\(~\\)\n\n\n\n\nPsychology\n\n\n\nBut that throws the baby out with the bath water. It’s as if we would forbid trains because they cannot fly to South America…\n\n\n\\(p\\)-values are not “good” or “bad”. They have strengths and weaknesses."
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#what-should-we-do-then",
+    "href": "bestPracticeResults/bestPracticeResults.html#what-should-we-do-then",
+    "title": "Best practices for reporting scientific results",
+    "section": "What should we do then?",
+    "text": "What should we do then?\n\\(~\\)\n\n\\(~\\)\n\nIn many situations it is not justified to make a strict yes/no decision.\n\n\nInstead: accumulating evidence over more and more studies."
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#a-small-literature-review",
+    "href": "bestPracticeResults/bestPracticeResults.html#a-small-literature-review",
+    "title": "Best practices for reporting scientific results",
+    "section": "A small literature review",
+    "text": "A small literature review\n\\(~\\)"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#suggestion-1-language-matters",
+    "href": "bestPracticeResults/bestPracticeResults.html#suggestion-1-language-matters",
+    "title": "Best practices for reporting scientific results",
+    "section": "Suggestion 1: Language matters!",
+    "text": "Suggestion 1: Language matters!\nRewrite your results and use a .\nFor single (observational) studies, the following has been suggested already decades ago (Bland 1986):\n\n\n \\(~\\)"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#suggestion-2-report-effect-sizes-95-cis-and-figures",
+    "href": "bestPracticeResults/bestPracticeResults.html#suggestion-2-report-effect-sizes-95-cis-and-figures",
+    "title": "Best practices for reporting scientific results",
+    "section": "Suggestion 2: Report effect sizes, 95% CIs, and figures",
+    "text": "Suggestion 2: Report effect sizes, 95% CIs, and figures\n\\(~\\)\nAsk:\n\nIs the effect size (biologically, medically, socially…) relevant?\n\n\\(~\\)\n\nWhich range of true effects is statistically consistent with the observed data?\n\n\\(~\\) \\(\\rightarrow\\) 95% confidence interval\n\\(~\\)\n\\(~\\)\n\\(~\\)\nHowever\n\\(~\\)\n\nThe choice of the 95% is again somewhat arbitrary. We could also go for 90% or 99% or any other interval.\n\n\\(~\\)\n\nThe 95% CI should not be misused for simple hypothesis testing in the sense of “Is 0 in the confidence interval or not?” – that is just significance testing.\n\n\nA results table from an example where I was involved (Imo et al. 2018):\n\n\\(~\\)\n\nWe found very strong evidence for a positive association of mercury in urine with amalgam fillings (regression coefficient: 0.33; 95% CI: 0.24–0.42; p < 0.001).\n\n\\(~\\)\n\nWe found no evidence for an association of log-transformed mercury concentrations in soil with log-transformed concentrations in urine (regression coefficient: 0.02; 95% CI: −0.06–0.10; p = 0.64).\n\n\nA graphical description often says more than thousand words…\n\\(~\\)\nDo you prefer\n\n\nor … ?\n\n\\(~\\)\n(Weinberger et al. 2016)"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#the-interpretation-of-the-p-value-depends",
+    "href": "bestPracticeResults/bestPracticeResults.html#the-interpretation-of-the-p-value-depends",
+    "title": "Best practices for reporting scientific results",
+    "section": "The interpretation of the \\(p\\)-value depends!",
+    "text": "The interpretation of the \\(p\\)-value depends!\n\\(~\\)\n\nObservational vs experimental study\n\n\nExploratory vs confirmatory analysis"
+  },
+  {
+    "objectID": "bestPracticeResults/bestPracticeResults.html#practice-in-drug-regulation",
+    "href": "bestPracticeResults/bestPracticeResults.html#practice-in-drug-regulation",
+    "title": "Best practices for reporting scientific results",
+    "section": "Practice in drug regulation",
+    "text": "Practice in drug regulation\nClinical trials (CTs) for drug approval underlie strict requirements – since decades.\n\\(~\\)\n\nCTs are randomized controlled trials.\n\n\nStudy protocols that are published even before any patient is treated.\n\n\nPreregistration of study protocols and analysis plans.\n\n\nTwo Trials Rule:\n\n\\(~\\)\n\n\n\n\n\\(~\\)\n\\(~\\)\n\n\\(~\\)\n\nClinical trials are experimental and confirmatory, and there are very strict regulations.\n\n\\(~\\)\n\n\n\n\nOn the other hand, in Ecology: (Often) observational studies, lots of researchers degrees of freedom, usually no preregistration, exploratory data analysis, no study protocols, model selection,…\n\\(~\\)\n\n\n\n\n\\(~\\)"
   }
 ]

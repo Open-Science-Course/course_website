@@ -2,23 +2,30 @@
 title: "Courses"
 ---
 
-We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. Our **courses and workshops** are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
+We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. 
+Our **courses and workshops** are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. 
+They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
 
 
 ## Upcoming courses and workshops
 
-We are planning a OS course in autumn 2023.
+We are planning a OSTE course in autumn 2023.
 
 
 ## Past courses and workshops
 
 ### Managing Ecological Data workshop, NØF 2023 (NMBU)
 
-We organized a workshop at the NØF 2023 conference at NMBU on *Managing ecological data: Best practices for data sharing and data reuse based on transparent and reproducible workflows*. The aim of the workshop was to illustrate what data management is and why it is important. We showed best practice in managing ecological data for sharing your own data, applying FAIR principles, and for reusing existing datasets. The workshop included hands-on training tools for sharing data and making reproducible documents.
+We organized a workshop at the NØF 2023 conference at NMBU on *Managing ecological data: Best practices for data sharing and data reuse based on transparent and reproducible workflows*. 
+The aim of the workshop was to illustrate what data management is and why it is important. 
+We showed best practice in managing ecological data for sharing your own data, applying FAIR principles, and for reusing existing datasets. 
+The workshop included hands-on training tools for sharing data and making reproducible documents.
 
-The workshop was aimed at ecologists that create and/or reuse ecological data from early career researchers with little experience with data management to more experienced researchers. The hands-on training will be based on selected case studies, and implemented in statistical program R.
+The workshop was aimed at ecologists that create and/or reuse ecological data from early career researchers with little experience with data management to more experienced researchers. 
+The hands-on training will be based on selected case studies, and implemented in statistical program R.
 
 Organized by Aud H. Halbritter (University of Bergen), Erlend B. Nilsen (Norwegian Institute for Nature Research and Nord University, and project leader of Living Norway Ecological Data Network) and Matt Grainger (Norwegian Institute for Nature Research).
+
 
 ### OS course 2022, Alpine Research Station Finse in Norway
 
