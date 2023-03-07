@@ -18,6 +18,8 @@ I am a researcher at NINA (Norwegian Institute for Nature Research) interested i
 
 #### Dag Endresen
 
+![](images/DagEndresen.png){style="float: right;" fig-align="left" width="178"}
+
 #### Erlend Nilsen
 
 #### Joe Chipperfield
