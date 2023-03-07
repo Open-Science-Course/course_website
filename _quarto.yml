@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "OS course"
+  title: "LN OST"
   navbar:
     left:
       - href: index.qmd
@@ -16,8 +16,6 @@ website:
   page-footer:
     left: "This page is built with ❤️🧠, some 🪄 and [Quarto](https://quarto.org/)."
     right:
-    - text: "License"
-      #href: LICENSE.md
     - text: "Contact"
       href: contact.qmd
 

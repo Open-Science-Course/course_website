@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.253">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stefanie Muff">
+<meta name="dcterms.date" content="2022-11-01">
+
+<title>OS course - Best practices for reporting scientific results</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">OS course</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../courses.html">
+ <span class="menu-text">Courses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../course_content.html">
+ <span class="menu-text">Content</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about_us.html">
+ <span class="menu-text">About Us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-ongoing-controversy-around-p-values" id="toc-the-ongoing-controversy-around-p-values" class="nav-link active" data-scroll-target="#the-ongoing-controversy-around-p-values">The ongoing controversy around <span class="math inline">\(p\)</span>-values</a></li>
+  <li><a href="#lots-of-publications-in-the-past-decades" id="toc-lots-of-publications-in-the-past-decades" class="nav-link" data-scroll-target="#lots-of-publications-in-the-past-decades">Lots of publications in the past decades…</a></li>
+  <li><a href="#p-values-statistical-significance-criticism" id="toc-p-values-statistical-significance-criticism" class="nav-link" data-scroll-target="#p-values-statistical-significance-criticism"><span class="math inline">\(P\)</span>-values / statistical significance criticism</a></li>
+  <li><a href="#right-or-wrong" id="toc-right-or-wrong" class="nav-link" data-scroll-target="#right-or-wrong">Right or wrong?</a></li>
+  <li><a href="#significance-thresholding-is-arbitrary" id="toc-significance-thresholding-is-arbitrary" class="nav-link" data-scroll-target="#significance-thresholding-is-arbitrary">Significance thresholding is arbitrary</a></li>
+  <li><a href="#significance-vs-relevance" id="toc-significance-vs-relevance" class="nav-link" data-scroll-target="#significance-vs-relevance">Significance vs relevance</a></li>
+  <li><a href="#shall-we-abolish-p-values" id="toc-shall-we-abolish-p-values" class="nav-link" data-scroll-target="#shall-we-abolish-p-values">Shall we abolish <span class="math inline">\(p\)</span>-values?</a></li>
+  <li><a href="#what-should-we-do-then" id="toc-what-should-we-do-then" class="nav-link" data-scroll-target="#what-should-we-do-then">What should we do then?</a></li>
+  <li><a href="#a-small-literature-review" id="toc-a-small-literature-review" class="nav-link" data-scroll-target="#a-small-literature-review">A small literature review</a></li>
+  <li><a href="#suggestion-1-language-matters" id="toc-suggestion-1-language-matters" class="nav-link" data-scroll-target="#suggestion-1-language-matters">Suggestion 1: Language matters!</a></li>
+  <li><a href="#suggestion-2-report-effect-sizes-95-cis-and-figures" id="toc-suggestion-2-report-effect-sizes-95-cis-and-figures" class="nav-link" data-scroll-target="#suggestion-2-report-effect-sizes-95-cis-and-figures">Suggestion 2: Report effect sizes, 95% CIs, and figures</a></li>
+  <li><a href="#the-interpretation-of-the-p-value-depends" id="toc-the-interpretation-of-the-p-value-depends" class="nav-link" data-scroll-target="#the-interpretation-of-the-p-value-depends">The interpretation of the <span class="math inline">\(p\)</span>-value depends!</a></li>
+  <li><a href="#practice-in-drug-regulation" id="toc-practice-in-drug-regulation" class="nav-link" data-scroll-target="#practice-in-drug-regulation">Practice in drug regulation</a></li>
+  <li><a href="#exercise" id="toc-exercise" class="nav-link" data-scroll-target="#exercise">Exercise</a></li>
+  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework">“Homework”</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Best practices for reporting scientific results</h1>
+<p class="subtitle lead">Navigating the minefield around <span class="math inline">\(P\)</span>-values and significance</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stefanie Muff </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 1, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="the-ongoing-controversy-around-p-values" class="level2">
+<h2 class="anchored" data-anchor-id="the-ongoing-controversy-around-p-values">The ongoing controversy around <span class="math inline">\(p\)</span>-values</h2>
+<p><span class="math inline">\(~\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/pvalue_circle.png" class="img-fluid figure-img" style="width:90.0%"></p>
+<p></p><figcaption class="figure-caption">ASA statement</figcaption><p></p>
+</figure>
+</div>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="citation" data-cites="wasserstein.lazar2016">(<a href="#ref-wasserstein.lazar2016" role="doc-biblioref">Wasserstein and Lazar 2016</a>)</span></p>
+<hr>
+</section>
+<section id="lots-of-publications-in-the-past-decades" class="level2">
+<h2 class="anchored" data-anchor-id="lots-of-publications-in-the-past-decades">Lots of publications in the past decades…</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p><img src="graphics/nuzzo.png" class="img-fluid" style="width:50.0%" alt="nuzzo"><img src="graphics/dirtydozen.png" class="img-fluid" style="width:50.0%" alt="Goodman 2008"> <img src="graphics/against_ss.png" class="img-fluid" style="width:50.0%" alt="Against"><img src="graphics/Ioannidis2.png" class="img-fluid" style="width:40.0%" alt="Ioannidis"></p>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="citation" data-cites="ioannidis2005">Ioannidis (<a href="#ref-ioannidis2005" role="doc-biblioref">2005</a>)</span>, <span class="citation" data-cites="goodman2008">Goodman (<a href="#ref-goodman2008" role="doc-biblioref">2008</a>)</span>, <span class="citation" data-cites="nuzzo2014">Nuzzo (<a href="#ref-nuzzo2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="amrhein.etal2019">Amrhein, Greenland, and McShane (<a href="#ref-amrhein.etal2019" role="doc-biblioref">2019</a>)</span>, …</p>
+<hr>
+</section>
+<section id="p-values-statistical-significance-criticism" class="level2">
+<h2 class="anchored" data-anchor-id="p-values-statistical-significance-criticism"><span class="math inline">\(P\)</span>-values / statistical significance criticism</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="math inline">\(P\)</span>-value <strong>criticism is</strong> as <strong>old</strong> as statistical significance testing (1920s!). Issues:</p>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>The sharp line <span class="math inline">\(p&lt;0.05\)</span> is <em>arbitrary</em>.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li><span class="math inline">\(P\)</span>-hacking / data dredging: Search until you find a result with <span class="math inline">\(p&lt;0.05\)</span>.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Publication bias: Studies with <span class="math inline">\(p&lt;0.05\)</span> are more likely to be published than ``non-significant’’ results.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>HARKING: Hypothesizing After the Results are Known.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Model selection using <span class="math inline">\(p\)</span>-values <span class="math inline">\(\rightarrow\)</span> <strong>model selection bias</strong>.</li>
+</ul>
+<hr>
+<p>Note: R.A. Fisher, the “inventor” of the <span class="math inline">\(p\)</span>-value (1920s) didn’t mean the <span class="math inline">\(p\)</span>-value to be used in the way it is used today, which is: doing a single experiment and use <span class="math inline">\(p&lt;0.05\)</span> for a conclusion.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>From <span class="citation" data-cites="goodman2016">Goodman (<a href="#ref-goodman2016" role="doc-biblioref">2016</a>)</span>:</p>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p>Fisher used “significance” merely <strong>to indicate that an observation was worth following up, with refutation of the null hypothesis justified only if further experiments “rarely failed” to achieve significance</strong>. This is in stark contrast to the modern practice of making claims based on a single demonstration of statistical significance.</p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
+<!-- ---  -->
+<!-- ## But wait, what is the problem with the $p$-value? -->
+<!-- $~$ -->
+<!-- The $p$-value is not a very intuitive concept... -->
+<!-- $~$ -->
+<!-- **Formal definition** -->
+<!-- The $p$-value is the probability to observe a data summary (e.g., a $t$-value) that is at least as extreme as the one observed, given that the Null Hypothesis is correct. -->
+<!-- $~$ -->
+<!-- ```{r pValFig, fig.width=9, fig.height=4.5,out.width="9cm"} -->
+<!-- par(mfrow=c(1,2)) -->
+<!-- zz1 <- qnorm(0.025) -->
+<!-- zz2 <- qnorm(0.975) -->
+<!-- zz3 <- qnorm(0.05) -->
+<!-- cord.x1 <- c(-4,seq(-4,zz1,0.01),zz1)  -->
+<!-- cord.y1 <- c(0,dnorm(seq(-4,zz1,0.01)),0)  -->
+<!-- cord.x2 <- c(zz2,seq(zz2,4,0.01),4)  -->
+<!-- cord.y2 <- c(0,dnorm(seq(zz2,4,0.01)),0)  -->
+<!-- curve(dnorm(x,0,1),-4,4,ylab="density",main="Two-sided p-value",xlab="") -->
+<!-- polygon(cord.x1,cord.y1,col='gray') -->
+<!-- polygon(cord.x2,cord.y2,col='gray') -->
+<!-- text(-3,0.05,labels="2.5%") -->
+<!-- text(3,0.05,labels="2.5%") -->
+<!-- cord.x3 <- c(-4,seq(-4,zz3,0.01),zz3)  -->
+<!-- cord.y3 <- c(0,dnorm(seq(-4,zz3,0.01)),0)  -->
+<!-- curve(dnorm(x,0,1),-4,4,ylab="density",main="One-sided p-value",xlab="") -->
+<!-- polygon(cord.x3,cord.y3,col='gray') -->
+<!-- text(-3,0.05,labels="5%") -->
+<!-- ``` -->
+<hr>
+</section>
+<section id="right-or-wrong" class="level2">
+<h2 class="anchored" data-anchor-id="right-or-wrong">Right or wrong?</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>Go to www.menti.com and use code 3944 9342.</p>
+<p>Which of these statements are right or wrong?</p>
+<p><span class="math inline">\(~\)</span></p>
+<ol type="1">
+<li>The <span class="math inline">\(p\)</span>-value is the probability that the null hypothesis is true.</li>
+</ol>
+<ol start="2" type="1">
+<li><span class="math inline">\(p=0.02\)</span> means that the alternative hypothesis is true with 98% probability.</li>
+</ol>
+<ol start="3" type="1">
+<li>The <span class="math inline">\(p\)</span>-value is the type-1 error rate.</li>
+</ol>
+<ol start="4" type="1">
+<li>The <span class="math inline">\(p\)</span>-value is the probability that the result happened by chance.</li>
+</ol>
+<ol start="5" type="1">
+<li>If <span class="math inline">\(p&gt;0.05\)</span>, we can conclude that there is no effect.</li>
+</ol>
+<ol start="6" type="1">
+<li>Two studies with <span class="math inline">\(p&gt;0.05\)</span> and <span class="math inline">\(p&lt;0.05\)</span> are in a conflict.</li>
+</ol>
+<!-- \pause -->
+<!-- \centering -->
+<!-- \textcolor{red}{Sorry, but this is all bullshit...} -->
+<hr>
+</section>
+<section id="significance-thresholding-is-arbitrary" class="level2">
+<h2 class="anchored" data-anchor-id="significance-thresholding-is-arbitrary">Significance thresholding is arbitrary</h2>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Is there a significant difference between <span class="math inline">\(p=0.049\)</span> and <span class="math inline">\(p=0.051\)</span>…??</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>No: </strong> </p>
+</blockquote>
+<ul>
+<li>Does <span class="math inline">\(p&gt;0.05\)</span> automatically imply that a variable is unimportant or that it has no effect?</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>No</strong>: <span class="citation" data-cites="altman_bland1995">(<a href="#ref-altman_bland1995" role="doc-biblioref">Altman and Bland 1995</a>)</span>. </p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
+<p>Reasons for large <span class="math inline">\(p\)</span>-values:</p>
+<ul>
+<li>Low sample size (<span class="math inline">\(\rightarrow\)</span> low power).</li>
+<li>The truth is not far from the null hypothesis.</li>
+<li>Collinear covariates.</li>
+</ul>
+<hr>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>“Statistical significance” is often used almost synonymously with “there is an effect”.</li>
+</ul>
+<ul>
+<li>But we all know: Correlation is not causation.</li>
+</ul>
+<hr>
+</section>
+<section id="significance-vs-relevance" class="level2">
+<h2 class="anchored" data-anchor-id="significance-vs-relevance">Significance vs relevance</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>Paul D. Ellis in <em>The Essential Guide to Effect Sizes</em> (2010, chapter 2):</p>
+<blockquote class="blockquote">
+<p>Indeed, statistical significance, which partly reflects sample size, may say nothing at all about the practical significance of a result. [….] To extract meaning from their results […] scientists need to look beyond <span class="math inline">\(p\)</span> values and effect sizes and <strong>make informed judgments about what they see</strong>.</p>
+</blockquote>
+<hr>
+<ul>
+<li>A low <span class="math inline">\(p\)</span>-value does not automatically imply that a variable is ``important’’ – and vice versa.</li>
+</ul>
+<ul>
+<li>``Is there an effect?’’ v.s. ‘’How much of an effect is there?’’.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<p><img src="graphics/pValueEffectSize.jpg" class="img-fluid" style="width:50.0%"></p>
+<p><span class="citation" data-cites="goodman2008">Goodman (<a href="#ref-goodman2008" role="doc-biblioref">2008</a>)</span></p>
+<p><span class="math inline">\(~\)</span></p>
+<p><strong>Problem:</strong> The <span class="math inline">\(p\)</span>-value blands the estimated effect size with its uncertainty.</p>
+<!-- ## Are two studies in conflict? -->
+<!-- $~$ -->
+<!-- * In the following example, two studies find the same effect size, but one is significant ($p=0.02$) and the other one is not ($p=0.09$). -->
+<!-- $~$ -->
+<!-- \centering -->
+<!-- ![Effects sizes](graphics/effect_sizes.png){width=60%} -->
+<!-- \scriptsize -->
+<!-- @amrhein.etal2019 -->
+<!-- \flushleft -->
+<!-- \normalsize -->
+<!-- \pause -->
+<!-- \vspace{6mm} -->
+<!-- * This is obviously no conflict, only the uncertainty is different. -->
+<!-- \vspace{2mm} -->
+<!-- * **Again:** The $p$-value blands the effect size with its uncertainty. -->
+<hr>
+</section>
+<section id="shall-we-abolish-p-values" class="level2">
+<h2 class="anchored" data-anchor-id="shall-we-abolish-p-values">Shall we abolish <span class="math inline">\(p\)</span>-values?</h2>
+<p><span class="math inline">\(~\)</span></p>
+<!-- * The journal _Basic and Applied Social Psychology_ had some years back banned $p$-values. -->
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="graphics/psycholog.png" class="img-fluid figure-img" style="width:60.0%"></p>
+<p></p><figcaption class="figure-caption">Psychology</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>But that throws the baby out with the bath water. It’s as if we would forbid trains because they cannot fly to South America…</li>
+</ul>
+<ul>
+<li><span class="math inline">\(p\)</span>-values are not “good” or “bad”. They have <strong>strengths</strong> and <strong>weaknesses</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="what-should-we-do-then" class="level2">
+<h2 class="anchored" data-anchor-id="what-should-we-do-then">What should we do then?</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p><img src="graphics/retire_significance.png" class="img-fluid" style="width:50.0%"></p>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>In many situations it is not justified to make a strict yes/no decision.</li>
+</ul>
+<ul>
+<li><strong>Instead</strong>: accumulating evidence over more and more studies.</li>
+</ul>
+<hr>
+</section>
+<section id="a-small-literature-review" class="level2">
+<h2 class="anchored" data-anchor-id="a-small-literature-review">A small literature review</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p><img src="graphics/reporting.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="suggestion-1-language-matters" class="level2">
+<h2 class="anchored" data-anchor-id="suggestion-1-language-matters">Suggestion 1: Language matters!</h2>
+<p>Rewrite your results and use a <em></em>.</p>
+<p>For single (observational) studies, the following has been suggested already decades ago <span class="citation" data-cites="bland_1986">(<a href="#ref-bland_1986" role="doc-biblioref">Bland 1986</a>)</span>:</p>
+<p><img src="graphics/JMBland.png" class="img-fluid" style="width:60.0%"></p>
+<hr>
+<p><img src="graphics/tree_title.png" class="img-fluid" style="width:100.0%"> <span class="math inline">\(~\)</span></p>
+<p><img src="graphics/tree_figure.png" class="img-fluid" style="width:70.0%"></p>
+<hr>
+</section>
+<section id="suggestion-2-report-effect-sizes-95-cis-and-figures" class="level2">
+<h2 class="anchored" data-anchor-id="suggestion-2-report-effect-sizes-95-cis-and-figures">Suggestion 2: Report effect sizes, 95% CIs, and figures</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>Ask:</p>
+<ul>
+<li>Is the effect size (biologically, medically, socially…) relevant?</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Which range of true effects is statistically consistent with the observed data?</li>
+</ul>
+<p><span class="math inline">\(~\)</span> <span class="math inline">\(\rightarrow\)</span> 95% confidence interval</p>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="math inline">\(~\)</span></p>
+<p>However</p>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>The choice of the 95% is again somewhat arbitrary. We could also go for 90% or 99% or any other interval.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>The 95% CI should <strong>not be misused for simple hypothesis testing</strong> in the sense of “Is 0 in the confidence interval or not?” – that is just significance testing.</li>
+</ul>
+<hr>
+<p>A results table from an example where I was involved <span class="citation" data-cites="imo.etal2018">(<a href="#ref-imo.etal2018" role="doc-biblioref">Imo et al. 2018</a>)</span>:</p>
+<p><img src="graphics/hg_table.png" class="img-fluid" style="width:80.0%"></p>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p>We found very strong evidence for a positive association of mercury in urine with amalgam fillings (regression coefficient: 0.33; 95% CI: 0.24–0.42; p &lt; 0.001).</p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p>We found no evidence for an association of log-transformed mercury concentrations in soil with log-transformed concentrations in urine (regression coefficient: 0.02; 95% CI: −0.06–0.10; p = 0.64).</p>
+</blockquote>
+<hr>
+<p>A graphical description often says more than thousand words…</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>Do you prefer</p>
+<p><img src="graphics/weinberger_table.png" class="img-fluid" style="width:60.0%"></p>
+<hr>
+<p>or … ?</p>
+<p><img src="graphics/weinberger.png" class="img-fluid" style="width:60.0%"></p>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="citation" data-cites="weinberger.etal2016">(<a href="#ref-weinberger.etal2016" role="doc-biblioref">Weinberger et al. 2016</a>)</span></p>
+<hr>
+</section>
+<section id="the-interpretation-of-the-p-value-depends" class="level2">
+<h2 class="anchored" data-anchor-id="the-interpretation-of-the-p-value-depends">The interpretation of the <span class="math inline">\(p\)</span>-value depends!</h2>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Observational vs experimental study</li>
+</ul>
+<ul>
+<li>Exploratory vs confirmatory analysis</li>
+</ul>
+<hr>
+</section>
+<section id="practice-in-drug-regulation" class="level2">
+<h2 class="anchored" data-anchor-id="practice-in-drug-regulation">Practice in drug regulation</h2>
+<p>Clinical trials (CTs) for <strong>drug approval</strong> underlie strict requirements – since decades.</p>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>CTs are <strong>randomized controlled trials</strong>.</li>
+</ul>
+<ul>
+<li><strong>Study protocols</strong> that are published even before any patient is treated.</li>
+</ul>
+<ul>
+<li><strong>Preregistration</strong> of study protocols and analysis plans.</li>
+</ul>
+<ul>
+<li><strong>Two Trials Rule</strong>:</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p></p>
+</blockquote>
+<!-- At least two subsequent studies with $p< 0.025$ (one-sided test, since direction of effect is known). -->
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="math inline">\(~\)</span></p>
+<hr>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Clinical trials are <em>experimental</em> and <em>confirmatory</em>, and there are very strict regulations.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p></p>
+</blockquote>
+<ul>
+<li><p>On the other hand, in Ecology: (Often) observational studies, lots of researchers degrees of freedom, usually no preregistration, exploratory data analysis, no study protocols, model selection,…</p>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p></p>
+</blockquote></li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<hr>
+</section>
+<section id="exercise" class="level1">
+<h1>Exercise</h1>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Work in teams of 2-3 and choose one of the papers I will give you.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Check how the authors reported their results.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Make concrete suggestions (e.g., example sentences) how the authors could have better presented their results.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<p>The material can be found here:</p>
+<p>https://github.com/stefaniemuff/statlearning/tree/master/OpenScience</p>
+<hr>
+</section>
+<section id="homework" class="level1">
+<h1>“Homework”</h1>
+<p><span class="math inline">\(~\)</span></p>
+<p>I recommend you to read the following short articles (you find the pdfs on the literature list):</p>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Scientists rise up against statistical significance (2019). Amrhein et al., <em>Nature</em>, 567, p.&nbsp;305–307, https://doi.org/10.1038/d41586-019-00857-9</li>
+</ul>
+<ul>
+<li>The ASA statement on <span class="math inline">\(p\)</span>-values: context, process, and purpose (2016). Wasserstein and Lazar, <em>The American Statistician</em>, 70:2, 129-133, https://doi.org/10.1080/00031305.2016.1154108</li>
+</ul>
+<ul>
+<li>Rewriting results sections in the language of evidence (2022). Muff et al., <em>Trends in Ecology and Evolution</em>, 37, 203–210, https://doi.org/10.1016/j.tree.2021.10.009</li>
+</ul>
+<hr>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-altman_bland1995" class="csl-entry" role="doc-biblioentry">
+Altman, D. G., and J. M. Bland. 1995. <span>“Absence of Evidence Is Not Evidence of Absence.”</span> <em>British Medical Journal</em> 311: 485.
+</div>
+<div id="ref-amrhein.etal2019" class="csl-entry" role="doc-biblioentry">
+Amrhein, V., S. Greenland, and B. McShane. 2019. <span>“Retire Statistical Significance.”</span> <em>Nature</em> 567: 305–7.
+</div>
+<div id="ref-bland_1986" class="csl-entry" role="doc-biblioentry">
+Bland, J. M. 1986. <em>An Introduction to Medical Statistics</em>. Oxford: Oxford Medical Publications.
+</div>
+<div id="ref-goodman2008" class="csl-entry" role="doc-biblioentry">
+Goodman, S. N. 2008. <span>“A Dirty Dozen: Twelve <span>P</span>-Value Misconceptions.”</span> <em>Seminars in Hematology</em> 45: 135–40.
+</div>
+<div id="ref-goodman2016" class="csl-entry" role="doc-biblioentry">
+———. 2016. <span>“Aligning Statistical and Scientific Reasoning.”</span> <em>Science</em> 352: 1180–82.
+</div>
+<div id="ref-imo.etal2018" class="csl-entry" role="doc-biblioentry">
+Imo, D., S. Muff, R. Schierl, K. Byber, Ch. Hitzke, M. Bopp, M. Maggi, S. Bose-O’Reilly, L. Held, and H. Dressel. 2018. <span>“Human-Biomonitoring and Individual Soil Measurements for Children and Mothers in an Area with Recently Detected Mercury-Contaminations and Public Health Concerns: A Cross-Sectional Study.”</span> <em>Nternational Journal Of Environmental Health Research</em> 28: 1–16.
+</div>
+<div id="ref-ioannidis2005" class="csl-entry" role="doc-biblioentry">
+Ioannidis, J. P. A. 2005. <span>“Why Most Published Research Findings Are False.”</span> <em>PLoS Medicine</em> 2: e124.
+</div>
+<div id="ref-nuzzo2014" class="csl-entry" role="doc-biblioentry">
+Nuzzo, R. 2014. <span>“Scientific Method: Statistical Errors.”</span> <em>Nature</em> 506: 150–52.
+</div>
+<div id="ref-wasserstein.lazar2016" class="csl-entry" role="doc-biblioentry">
+Wasserstein, R. L., and N. A. Lazar. 2016. <span>“The <span>ASA</span>’s Statement on p-Values: Context, Process, and Purpose.”</span> <em>The American Statistician</em>.
+</div>
+<div id="ref-weinberger.etal2016" class="csl-entry" role="doc-biblioentry">
+Weinberger, I. C., S. Muff, A. Kranz, and F. Bontadina. 2016. <span>“Flexible Habitat Selection Paves the Way for a Recovery of Otter Populations in the <span>E</span>uropean <span>A</span>lps.”</span> <em>Biological Conservation</em> 199: 88–95.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This page is built with ❤️🧠, some 🪄 and <a href="https://quarto.org/">Quarto</a>.</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ License
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../contact.html">Contact</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

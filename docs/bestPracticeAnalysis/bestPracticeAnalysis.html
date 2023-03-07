@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.253">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Stefanie Muff">
+<meta name="dcterms.date" content="2022-11-01">
+
+<title>OS course - Best practices in data analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+</head><body class="nav-fixed">\usepackage{tcolorbox}
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+
+
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">OS course</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../courses.html">
+ <span class="menu-text">Courses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../course_content.html">
+ <span class="menu-text">Content</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about_us.html">
+ <span class="menu-text">About Us</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-and-overview" id="toc-introduction-and-overview" class="nav-link active" data-scroll-target="#introduction-and-overview">Introduction and overview</a></li>
+  <li><a href="#developing-a-model" id="toc-developing-a-model" class="nav-link" data-scroll-target="#developing-a-model">Developing a model</a></li>
+  <li><a href="#two-examples" id="toc-two-examples" class="nav-link" data-scroll-target="#two-examples">Two examples</a></li>
+  <li><a href="#predictive-and-explanatory-models" id="toc-predictive-and-explanatory-models" class="nav-link" data-scroll-target="#predictive-and-explanatory-models">Predictive and explanatory models</a></li>
+  <li><a href="#prediction-vs-explanation" id="toc-prediction-vs-explanation" class="nav-link" data-scroll-target="#prediction-vs-explanation">Prediction vs explanation</a></li>
+  <li><a href="#model-selection-for-predictive-models" id="toc-model-selection-for-predictive-models" class="nav-link" data-scroll-target="#model-selection-for-predictive-models">Model selection for predictive models</a></li>
+  <li><a href="#model-selection-for-explanatory-models" id="toc-model-selection-for-explanatory-models" class="nav-link" data-scroll-target="#model-selection-for-explanatory-models">Model selection for explanatory models?</a></li>
+  <li><a href="#model-selection-bias-coded-example" id="toc-model-selection-bias-coded-example" class="nav-link" data-scroll-target="#model-selection-bias-coded-example">Model selection bias – coded example</a></li>
+  <li><a href="#confirmatory-vs.-exploratory" id="toc-confirmatory-vs.-exploratory" class="nav-link" data-scroll-target="#confirmatory-vs.-exploratory">Confirmatory vs.&nbsp;exploratory</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Best practices in data analysis</h1>
+<p class="subtitle lead">Selecting a model</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Stefanie Muff </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 1, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction-and-overview" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-and-overview">Introduction and overview</h2>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>“Best practices in data analysis” is a huge field.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Today: some words on model selection.</li>
+</ul>
+<hr>
+</section>
+<section id="developing-a-model" class="level2">
+<h2 class="anchored" data-anchor-id="developing-a-model">Developing a model</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>In statistics courses, the correct models often “fall from heaven”: The model family and the terms in the model were almost always given.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>However, it is often not immediately obvious which terms are relevant to include in a model.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>Importantly, the approach to find a model <strong>heavily depends on the aim</strong> for which the model is built.<br>
+<span class="math inline">\(~\)</span></p>
+<p>The following distinction is important:</p>
+<ul>
+<li>The aim is to future values of <span class="math inline">\(y\)</span> from known regressors.</li>
+<li>The aim is to <span class="math inline">\(y\)</span> using known regressors. Ultimately, the aim is to <em>find causal relationships</em>.</li>
+</ul>
+<hr>
+<p><span class="math inline">\(\rightarrow\)</span> Even among statisticians there is no real consensus about how, if, or when to select a model:</p>
+<p><img src="graphics/brewer_title.jpg" class="img-fluid"> <img src="graphics/brewer.jpg" class="img-fluid"></p>
+<p>Note: The first sentence of a paper in <em>Methods in Ecology and Evolution</em> from 2016 is: ``Model selection is difficult.’’</p>
+<hr>
+<p>Why is finding a model so hard?</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>Note that a model is only an <em>approximation</em> to reality. The aim of a data analysis is to understand something about the real world thanks to <em>simplifications</em>.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>Box (1979): <strong>``All models are wrong, but some are useful.’’</strong></p>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="math inline">\(\rightarrow\)</span> There is often not a “right” or a “wrong” model – but there are more and less useful ones.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Finding a model with good properties is sometimes an art…</p>
+<hr>
+</section>
+<section id="two-examples" class="level2">
+<h2 class="anchored" data-anchor-id="two-examples">Two examples</h2>
+<p><span class="math inline">\(~\)</span></p>
+<ol type="1">
+<li><strong>Understanding the effect of mercury (Hg) in the soil</strong> <em>Research question:</em> Is the Hg level in the environment (soil) of people’s homes associated to the Hg levels in their bodies (urin, hair)?<br>
+<em>Method:</em> Measurements of Hg concentrations on people’s properties, as well as measurements and survey of children and their mothers living on these properties.</li>
+</ol>
+<p><span class="math inline">\(~\)</span></p>
+<ol start="2" type="1">
+<li><strong>Prognostic factors for body fat</strong><br>
+<em>Research question:</em> Which factors allow for precise estimation (prediction) of body fat?<br>
+<em>Method:</em> Study with 241 male participants. Measured variable were, among others, body fat (%), age, weight, body size, BMI, neck thickness and abdominal girth.</li>
+</ol>
+<hr>
+</section>
+<section id="predictive-and-explanatory-models" class="level2">
+<h2 class="anchored" data-anchor-id="predictive-and-explanatory-models">Predictive and explanatory models</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>Before we continue to discuss model/variable selection, we need to be clear about the scope of the model:</p>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>: These are models that aim to predict the outcome of future subjects.<br>
+<strong>Example:</strong> In the bodyfat example the aim is to predict people’s bodyfat from factors that are easy to measure (age, BMI, weight,..).</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>: These are models that aim at understanding the (causal) relationship between covariates and the response.<br>
+<strong>Example</strong>: The mercury study aims to understand if Hg-concentrations in the soil (covariable) influence the Hg-concentrations in humans (response).</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="math inline">\(\rightarrow\)</span> The model selection strategy depends on this distinction.</p>
+<hr>
+</section>
+<section id="prediction-vs-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="prediction-vs-explanation">Prediction vs explanation</h2>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p>When the aim is , the best model is the one that best predicts the fate of a future subject. This is a well defined task and “objective” variable selection strategies to find the model which is best in this sense are potentially useful.</p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
+<blockquote class="blockquote">
+<p>However, when used for the best model will depend on the scientific question being asked, and <strong>automatic variable selection strategies have no place</strong>.</p>
+</blockquote>
+<p><span class="math inline">\(~\)</span></p>
+<p><span class="citation" data-cites="clayton.hills1993">(<a href="#ref-clayton.hills1993" role="doc-biblioref">Clayton and Hills 1993</a>)</span></p>
+<hr>
+</section>
+<section id="model-selection-for-predictive-models" class="level2">
+<h2 class="anchored" data-anchor-id="model-selection-for-predictive-models">Model selection for predictive models</h2>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Cross-validation (CV)</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>AIC, BIC, DIC, …</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>If you want, even forward and backward selection is ok.</li>
+</ul>
+<p><span class="math inline">\(~\)</span></p>
+<ul>
+<li>Any (other) optimization procedure of some “cost function”.</li>
+</ul>
+<hr>
+</section>
+<section id="model-selection-for-explanatory-models" class="level2">
+<h2 class="anchored" data-anchor-id="model-selection-for-explanatory-models">Model selection for explanatory models?</h2>
+<span class="math inline">\(~\)</span>
+<p><span class="math inline">\(~\)</span> See, e.g., <span class="citation" data-cites="freedman1983">(<a href="#ref-freedman1983" role="doc-biblioref">Freedman 1983</a>)</span> and <span class="citation" data-cites="copas1983">(<a href="#ref-copas1983" role="doc-biblioref">Copas 1983</a>)</span>.</p>
+<hr>
+<p><span class="math inline">\(~\)</span></p>
+<p>“Explanation” means that you will want to interpret the regression coefficients, 95% CIs and <span class="math inline">\(p\)</span>-values. It is then often assumed that some sort of causality (<span class="math inline">\(x\rightarrow y\)</span>) exists.</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>In such a situation, you should formulate a :</p>
+<p><span class="math inline">\(~\)</span></p>
+<p>You might consider <em>pre-registration</em>.</p>
+<hr>
+<p>Confirmatory models have a long tradition medicine. In fact, the main conclusions in a study are only allowed to be drawn from the main model (which needs to be specified even before data are collected):</p>
+<p><img src="graphics/claytonHills.jpg" class="img-fluid" style="width:90.0%"> <span class="math inline">\(~\)</span></p>
+<p><span class="citation" data-cites="clayton.hills1993">(<a href="#ref-clayton.hills1993" role="doc-biblioref">Clayton and Hills 1993</a>)</span></p>
+<hr>
+</section>
+<section id="model-selection-bias-coded-example" class="level2">
+<h2 class="anchored" data-anchor-id="model-selection-bias-coded-example">Model selection bias – coded example</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>https://github.com/stefaniemuff/statlearning/tree/master/OpenScience/bestPracticeAnalysis/Rcode_exercise</p>
+<p><span class="math inline">\(~\)</span></p>
+<hr>
+</section>
+<section id="confirmatory-vs.-exploratory" class="level2">
+<h2 class="anchored" data-anchor-id="confirmatory-vs.-exploratory">Confirmatory vs.&nbsp;exploratory</h2>
+<p><span class="math inline">\(~\)</span></p>
+<p>Any <em>additional analyses</em> that you potentially do with your data have the character of <em>exploratory models</em>.</p>
+<p><span class="math inline">\(\rightarrow\)</span> Two sorts of explanatory models/analyses:</p>
+<p>:</p>
+<p>:</p>
+<hr>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p><img src="graphics/models.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="references" class="level1">
+
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-clayton.hills1993" class="csl-entry" role="doc-biblioentry">
+Clayton, D., and M. Hills. 1993. <em>Statistical Models in Epidemiology</em>. Oxford: Oxford University Press.
+</div>
+<div id="ref-copas1983" class="csl-entry" role="doc-biblioentry">
+Copas, J. B. 1983. <span>“Regression, Prediction and Shrinkage.”</span> <em>Journal of the Royal Statistical Society. Series B (Statistical Methodology)</em> 45: 311–54.
+</div>
+<div id="ref-freedman1983" class="csl-entry" role="doc-biblioentry">
+Freedman, D. A. 1983. <span>“A Note on Screening Regression Equations.”</span> <em>The American Statistician</em> 37: 152–55.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">This page is built with ❤️🧠, some 🪄 and <a href="https://quarto.org/">Quarto</a>.</div>   
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ License
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../contact.html">Contact</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
