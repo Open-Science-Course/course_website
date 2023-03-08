@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "LN OST"
+  title: ""
   navbar:
     left:
       - href: index.qmd
