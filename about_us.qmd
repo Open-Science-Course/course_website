@@ -20,6 +20,8 @@ I am a researcher at NINA (Norwegian Institute for Nature Research) interested i
 
 ![](images/DagEndresen.png){style="float: right;" fig-align="left" width="178"}
 
+GBIF Node Manager for the [Norwegian participant node](https://www.gbif.no/) in the [Global Biodiversity Information Facility](https://www.gbif.org/) (GBIF). GBIF-Norway is hosted by the [Natural History Museum](https://www.nhm.uio.no/english/) at the [University of Oslo](https://www.uio.no/english/) (UiO) and the research group for Machine-readable Nature (MaNa). Scientific interests include biodiversity informatics, research data infrastructure, open-access data publication, predictive data analysis, and plant genetic resources for food and agriculture. My research teaching contributions include predictive modeling within agroecology of the link between useful traits in traditional food crops and the environment where landraces were developed through long-term farming efforts. And biodiversity data publication and use through the [BioDATA](https://www.nhm.uio.no/english/research/projects/biodata/) program, with more.
+
 #### Erlend Nilsen
 
 #### Joe Chipperfield
