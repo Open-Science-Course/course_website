@@ -26,7 +26,7 @@ Open Science Training is part of the [Living Norway Ecological Data Network](htt
 
 ![](images/UiB_white.png){width="300"}
 
-![](images/NINA.png){width="150"}
+![](images/NINA.png){width="140"}
 :::
 
 ::: {layout-ncol="3"}
@@ -39,9 +39,10 @@ Open Science Training is part of the [Living Norway Ecological Data Network](htt
 
 ::: {layout-ncol="3"}
 ![](images/uio.png){width="100"}
-
+![](images/logo NMBU.png){width="140"}
 
 :::
+
 
 ## License
 

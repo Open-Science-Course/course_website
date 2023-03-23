@@ -18,17 +18,31 @@ I am a researcher at NINA (Norwegian Institute for Nature Research) interested i
 
 #### Dag Endresen
 
-![](images/DagEndresen.png){style="float: right;" fig-align="left" width="178"}
+![](images/DagEndresen.png){style="float: right;" fig-align="right" width="178"}
+
+Dag Endresen is the GBIF node manager for the [Norwegian Participant Node](https://www.gbif.no/) of the [Global Biodiversity Information Facility](https://www.gbif.org/).
+
+#### Katrine Eldegard
+
+![](images/Eldegard.jpg){style="float: right;" fig-align="left" width="178"}
+
+I am a professor at the Norwegian University of Life Sciences (NMBU) interested in evidence-based management and conservation of wildlife populations and ecosystems. I am a part of the Living Norway Ecological Data Network and engaged in implementing open science practices in teaching and supervision at the university, and in my own research.
+
+#### Stefanie Muff
+
+![](images/steffi.jpg){style="float: right;" fig-align="right" width="178"}
+
+I am an Associate Professor in Statistics at the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. I am collaborating with biologists and ecologists on a regular basis and is therefore having an intrinsic interest in open and reproducible science.
+
+#### Richard J. Telford
+
+![](images/richard_hat_0.jpg){style="float: right;" fig-align="left" width="178"}
+
+I am a palaeoecologist at the University of Bergen (UiB), Norway. I am interested in quantitative palaeoecology, keen to make research in ecology and palaeoecology more reproducible and the organiser of R-klubben, a drop-in peer-to-peer R help session at the Department of Bioscience at UiB.
 
 #### Erlend Nilsen
 
 #### Joe Chipperfield
-
-#### Katrine Eldegard
-
-#### Richard J. Telford
-
-#### Stefanie Muff
 
 #### Anders G. Finstad
 
