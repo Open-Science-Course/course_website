@@ -18,10 +18,9 @@ We develop [tools](course_content) to facilitate Open Science practices in our c
 
 ## Acknowledgements
 
-Open Science Training is part of the [Living Norway Ecological Data Network](https://livingnorway.no/) and a collaboration with the University of Bergen, Nord University, GBIF Norway, Norwegian University of Science and Technology, Norwegian University of Life Science, University of Oslo and Norwegian Institute for Nature Research. 
+Open Science Training is part of the [Living Norway Ecological Data Network](https://livingnorway.no/) and a collaboration with the University of Bergen, Nord University, GBIF Norway, Norwegian University of Science and Technology, Norwegian University of Life Science, University of Oslo and Norwegian Institute for Nature Research.
 
 ::: {layout-ncol="3"}
-
 ![](images/livingN.png){width="250"}
 
 ![](images/UiB_white.png){width="300"}
@@ -38,11 +37,8 @@ Open Science Training is part of the [Living Norway Ecological Data Network](htt
 :::
 
 ::: {layout-ncol="3"}
-![](images/uio.png){width="100"}
-![](images/logo NMBU.png){width="140"}
-
+![](images/uio.png){width="100"} ![](images/logo%20NMBU.png){width="140"}
 :::
-
 
 ## License
 
