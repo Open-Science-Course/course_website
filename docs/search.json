@@ -109,7 +109,7 @@
     "href": "courses.html#upcoming-courses-and-workshops",
     "title": "Courses",
     "section": "Upcoming courses and workshops",
-    "text": "Upcoming courses and workshops\nWe are planning a Open Science Training course in autumn 2023."
+    "text": "Upcoming courses and workshops\nThe next Open Science course will be held at Hjerkinn from the 13. to 18. November 2023."
   },
   {
     "objectID": "bestPracticeAnalysis/Rcode_exercise/ModelSelectionBias.html",
@@ -278,5 +278,12 @@
     "title": "Best practices for reporting scientific results",
     "section": "Practice in drug regulation",
     "text": "Practice in drug regulation\nClinical trials (CTs) for drug approval underlie strict requirements – since decades.\n\\(~\\)\n\nCTs are randomized controlled trials.\n\n\nStudy protocols that are published even before any patient is treated.\n\n\nPreregistration of study protocols and analysis plans.\n\n\nTwo Trials Rule:\n\n\\(~\\)\n\n\n\n\n\\(~\\)\n\\(~\\)\n\n\\(~\\)\n\nClinical trials are experimental and confirmatory, and there are very strict regulations.\n\n\\(~\\)\n\n\n\n\nOn the other hand, in Ecology: (Often) observational studies, lots of researchers degrees of freedom, usually no preregistration, exploratory data analysis, no study protocols, model selection,…\n\\(~\\)\n\n\n\n\n\\(~\\)"
+  },
+  {
+    "objectID": "index.html#the-aim",
+    "href": "index.html#the-aim",
+    "title": "Living Norway Open Science Training",
+    "section": "",
+    "text": "Universities, journals, and funding bodies increasingly demand open and reproducible research practices across the scientific community. Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.\nWe are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparency in ecology."
   }
 ]
