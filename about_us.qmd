@@ -6,13 +6,13 @@ We are a group of ecologists, statisticians and everything in between, with inte
 
 #### Aud H. Halbritter
 
-![](images/aud.jpg){style="float: right;" fig-align="right" width="250"}
+![](images/aud.jpg){fig-align="right" style="float: right;" width="178"}
 
-I am a researcher in plant ecology at the University of Bergen (Norway) interested in global change impacts on alpine biodiversity and ecosystem functions. For the last eight years, I have been part of developing bioST\@TS, an online teaching and learning platform on data management and analysis for biology students. More recently, I have engaged in Open Science practice in my own research, supervision and teaching. And I organized the first Open Science Course.
+I am a researcher in plant ecology at the University of Bergen (Norway) interested in global change impacts on alpine biodiversity and ecosystem functions. For the last eight years, I have been part of developing bioST\@TS, an online teaching and learning platform on data management and analysis for biology students. More recently, I have engaged in Open Science practice in my own research, supervision and teaching. I initiated and organize the Open Science Course in Ecology.
 
 #### Matt Grainger
 
-![](images/Matt.jpeg){style="float: right;" fig-align="left" width="178"}
+![](images/Matt.jpeg){fig-align="left" style="float: right;" width="178"}
 
 I am a researcher at NINA (Norwegian Institute for Nature Research) interested in evidence-based conservation and in metascience ("the science of science"). I am a part of the Living Norway Ecological Data Network and within that project focus on developing tools (e.g. R packages, Shiny Apps, etc.) and workflows to help researchers share their data openly and to make use of open data in their research. I am a member of the ESHackathon, an interdisciplinary community of practice making evidence-based decisions easier to achieve through opensource software, and SORTEE (Society for Open, Repeatable and Transparent Ecology and Evolution).
 
@@ -21,6 +21,12 @@ I am a researcher at NINA (Norwegian Institute for Nature Research) interested i
 ![](images/DagEndresen.png){style="float: right;" fig-align="right" width="178"}
 
 Dag Endresen is the GBIF node manager for the [Norwegian Participant Node](https://www.gbif.no/) of the [Global Biodiversity Information Facility](https://www.gbif.org/).
+
+.
+
+.
+
+.
 
 #### Katrine Eldegard
 
@@ -34,6 +40,10 @@ I am a professor at the Norwegian University of Life Sciences (NMBU) interested 
 
 I am an Associate Professor in Statistics at the Norwegian University of Science and Technology (NTNU) in Trondheim, Norway. I am collaborating with biologists and ecologists on a regular basis and is therefore having an intrinsic interest in open and reproducible science.
 
+.
+
+.
+
 #### Richard J. Telford
 
 ![](images/richard_hat_0.jpg){style="float: right;" fig-align="left" width="178"}
@@ -42,8 +52,12 @@ I am a palaeoecologist at the University of Bergen (UiB), Norway. I am intereste
 
 #### Erlend Nilsen
 
+Senior research scientist at NINA.
+
+![](images/12833.jpg){width="178"}
+
 #### Joe Chipperfield
 
-#### Anders G. Finstad
+Researcher at NINA
 
-#### Bob OHara
+![](images/joe.jpeg){width="178"}
