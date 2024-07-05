@@ -6,9 +6,23 @@ We offer hands-on training on best practice methods and technologies to make res
 
 ## Upcoming courses and workshops
 
-The next [Open Science course](https://livingnorway.no/2023/06/13/research-course-on-open-reproducible-and-transparent-science-in-ecology/) will be held at Hjerkinn from the 13. to 18. November 2023.
+We are teaching the third iteration or our [Open Science course](https://www.uib.no/en/rg/EECRG/171658/open-reproducible-and-transparent-science-ecology) this autumn. The course will be held at Hjerkinn between the 4. and 9. November 2024 and is open for applications now.
 
 ## Past courses and workshops
+
+### OS course 2023, Hjerkinn, Norway
+
+![Group of teachers and students on Open Science course in 2024. Photo: Erik Kusch](images/DSC09723.png)
+
+In 2024, the Open Science course was held at Hjerkinn, located between Oslo and Trondheim. Everybody made their way slowly up the mountain. The journey from Oslo took an hour longer, because of a missing bridge and a "bus for tog" replacement. The weather at Hjerkinn was sunny and we entered a winter wonderland. Not only the beauty took away our breath, as the temperature was far below 0 °C. An we walked though deep snow to our accommodation.
+
+Our international students this year were from Scandinavia (Norway, and Denmark), and Europe and Asia (Belgium, Switzerland, Italy, and Thailand). This year one supervisor from a student that took the course last year attended the course to be able to keep up with their students. Also, a cat and a dog were part of the team.
+
+Every day we quickly ran to out lecture room before freezing, as this required a few steps outside. The students were very interested and engaged and learned how to wrangle data, write code, execute functions, and even learned how to make a package. They learned about reproducible workflows, using tools to improve reproducibility in their own work, such as quarto, git/GitHub and targets. Also, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards. One evening we had a fun exercise, where we went through journals searching if the authors provided data and code for their studies and analysis. While the work was fun and the students did not want to stop, the results was disappointing, as we did not find a lot of data and code that was accessible. Mid week, we visited the [Villreinsenter](https://villrein.no/norsk-villreinsenter/) at Hjerkinn and afterwards hike through deep snow to a little top and had a deserved break.
+
+After five days, we left Hjerkinn tired and satisfied; full of ideas, motivation and newly aquired tools and skills to improve our work and workflows.
+
+![](images/IMG_2869.jpg)
 
 ### Managing Ecological Data workshop, NØF 2023 (NMBU)
 
@@ -20,11 +34,11 @@ Organized by Aud H. Halbritter (University of Bergen), Erlend B. Nilsen (Norwegi
 
 ### OS course 2022, Alpine Research Station Finse in Norway
 
-![](images/course_2022.jpg)
+![Group of students and teacher at Open Science course in 2023 at Finse. Photo: Jens Ådne Rekkedal Haga.](images/course_2022.jpg)
 
 In November, we held a course on Open, Reproducible, and Transparent Science in Ecology at the Biological Research Station at Finse. The course was a collaboration between BioCEED (University of Bergen), GBIF Norway and Living Norway with teachers from NINA, NTNU, UiO and UiB. The course was aimed for PhD students and offered hands-on training, skills and knowledge on Open Science, data collection, data handling, data standards, data repositories and publishing, reproducible workflows and best practice in data analysis.
 
-On Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe (Ukraine, Belarus, Georgia), and even from Asia (Armenia, India, Tajikistan). It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.
+On Monday, 14th of November a group of students and teachers made their way slowly up the mountain to Finse. The students were an international group from Scandinavia (Norway, Sweden, Denmark), Spain, Eastern Europe, Eurasia and Asia (Ukraine, Belarus, Georgia, Armenia, India, Tajikistan). It was unusually warm for the season, and there was no snow, which was lucky for those who were not prepared for the alpine environment.
 
 While the temperature was dropping and the wind was howling, the students were wrangling data, writing code, and executing functions. They recorded frozen species and made their own data collection to understand the importance of also recording metadata (the data around the data). They learned why reproducible workflows, using tools such as quarto, git/GitHub and targets can benefit your future self, increase collaboration and make your research more robust. And finally, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards.
 
