@@ -12,7 +12,7 @@ website:
       - course_content.qmd
       - about_us.qmd
       - contact.qmd
-  favicon: figures/favicon.ico
+  favicon: images/favicon.ico
 
   page-footer:
     left: "This page is built with ❤️🧠, some 🪄 and [Quarto](https://quarto.org/)."
