@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+    favicon: figures/favicon.ico
   title: ""
   navbar:
     left:
