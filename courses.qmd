@@ -6,15 +6,25 @@ We offer hands-on training on best practice methods and technologies to make res
 
 ## Upcoming courses and workshops
 
-We are teaching the third iteration or our [Open Science course](https://www.uib.no/en/rg/EECRG/171658/open-reproducible-and-transparent-science-ecology) this autumn. The course will be held at Hjerkinn between the 4. and 9. November 2024 and is open for applications now.
+Updates will follow.
 
 ## Past courses and workshops
 
+### OS course 2024, Hjerkinn, Norway
+
+The 2024 Open, Reproducible and Transparent Science in Ecology was held at Hjerkinn again between the 6.- 11. November. This year, we had an international group of 13 students from Scandinavia (Norway, Finland, and Denmark/Greenland), Switzerland and the UK.
+
+The students were interested and engaged in learning how to wrangle data, write code, execute functions, and learning how to make an R package. The course curriculum also contains reproducible workflows, using tools to improve reproducibility in their own work, such as quarto, git/GitHub and targets. We had invited guest lecturers to talk about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards. One evening we conducted an exercise, where the students screened articles in ecological journals, searching for openly available data and code to reproduce the analysis. The result was eye-opening for the students in that most data was available, however the analysis could rarely be reproduced due to lack of availability of code. Mid-week, we organized a hike to Vålåsjøhøe to get some fresh are and clear our heads. After the hike, we got a presentation from Roy Andersen who works at the [Villreinsenter](https://villrein.no/norsk-villreinsenter/) at Hjerkinn. He presented the ecology and status of the reindeer in Norway and the work the Villreinsenter does to protect the reindeer. On the last day, the students got the opportunity to work on their own projects, applying new approaches they have learned. 
+
+After five days, we left Hjerkinn tired and satisfied, full of ideas, motivation and inspiration from the new tools and skills to improve how to do science.
+
+![Group of teachers and students on Open Science course in 2024. Photo: Erik Kusch](images/course_2024.png){width="547"}
+
 ### OS course 2023, Hjerkinn, Norway
 
-![Group of teachers and students on Open Science course in 2024. Photo: Erik Kusch](images/DSC09723.png)
+![Group of teachers and students on Open Science course in 2023. Photo: Erik Kusch](images/DSC09723.png)
 
-In 2024, the Open Science course was held at Hjerkinn, located between Oslo and Trondheim. Everybody made their way slowly up the mountain. The journey from Oslo took an hour longer, because of a missing bridge and a "bus for tog" replacement. The weather at Hjerkinn was sunny and we entered a winter wonderland. Not only the beauty took away our breath, as the temperature was far below 0 °C. An we walked though deep snow to our accommodation.
+In November 2023, the Open Science course was held at Hjerkinn, located between Oslo and Trondheim. Everybody made their way slowly up the mountain. The journey from Oslo took an hour longer, because of a missing bridge and a "bus for tog" replacement. The weather at Hjerkinn was sunny and we entered a winter wonderland. Not only the beauty took away our breath, as the temperature was far below 0 °C. An we walked though deep snow to our accommodation.
 
 Our international students this year were from Scandinavia (Norway, and Denmark), and Europe and Asia (Belgium, Switzerland, Italy, and Thailand). This year one supervisor from a student that took the course last year attended the course to be able to keep up with their students. Also, a cat and a dog were part of the team.
 
