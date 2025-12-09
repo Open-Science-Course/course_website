@@ -20,7 +20,11 @@ After a whole week of discussions and coding we all left Hjerkinn satisfied. Hop
 
 Thank you for the wonderful week!
 
-![Group of teachers and students on Open Science course in 2025.](images/course_2025.jpeg)
+![Group of teachers and students on Open Science course in 2025.](images/course_2025.jpeg){width="2000"}
+
+![Students on the Open Science course.](images/IMG_8175.jpeg){width="2000"}
+
+![View from top of Vålåsjøhøe.](images/IMG_8170.jpeg){width="2000"}
 
 ### OS course 2024, Hjerkinn, Norway
 
