@@ -6,7 +6,7 @@ We offer hands-on training on best practice methods and technologies to make res
 
 ## Upcoming courses and workshops
 
-Updates will follow.
+[Open, Reproducible and Transparent Science](https://www4.uib.no/en/studies/courses/bio940) for PhD students in 2026.
 
 ## Past courses and workshops
 
