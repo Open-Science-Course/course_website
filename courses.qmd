@@ -10,6 +10,18 @@ Updates will follow.
 
 ## Past courses and workshops
 
+### OS course 2025, Hjerkinn, Norway
+
+The 2025 Open, Reproducible and Transparent Course in Ecology was held again at Hjerkinn between the 10th and 15th of November. This year we had 21 students participating in the course. The international group was from institutions in Norway, Sweden, Finnland, Island, UK, Northern Ireland, Austria, and Ghana. The teachers included experts on different topics from GBIF Norway (UiO), NTNU, NINA, and UiB.
+
+The whole week was dedicated to teaching and learning about the data life cycle. We started with a general introduction to Open Science,tools and approaches, and continued with topics on data handling, repositories, publishing and reuse, reproducible workflows, and analysis. The course was a mix of lectures and hands-on practical exercises. The students got an introduction to GBIF, Darwin Core, and biases in GBIF data. We also covered best practice in data analysis, reporting results, and systematic reviews and meta analysis. For the first time, we also discussed using AI in data publishing and coding. Finally the students were also introduced to tools for more reproducible workflows including quarto, GitHub, and targets. In the middle of the week we took a well deserved break and went for a short hike to Vålåsjøhøe. This was essential to clear our heads and continue the data wrangling and coding for the rest of the week. On the last day, all the students had the opportunity to apply what they have learnt to their own data and work.
+
+After a whole week of discussions and coding we all left Hjerkinn satisfied. Hopefully, everybody went home with a new toolkit to apply in their daily data management and coding to support more open and reproducible ecological science.
+
+Thank you for the wonderful week!
+
+![Group of teachers and students on Open Science course in 2025.](images/course_2025.jpeg)
+
 ### OS course 2024, Hjerkinn, Norway
 
 The 2024 Open, Reproducible and Transparent Science in Ecology was held at Hjerkinn again between the 6.- 11. November. This year, we had an international group of 13 students from Scandinavia (Norway, Finland, and Denmark/Greenland), Switzerland and the UK.
@@ -28,7 +40,7 @@ In November 2023, the Open Science course was held at Hjerkinn, located between 
 
 Our international students this year were from Scandinavia (Norway, and Denmark), and Europe and Asia (Belgium, Switzerland, Italy, and Thailand). This year one supervisor from a student that took the course last year attended the course to be able to keep up with their students. Also, a cat and a dog were part of the team.
 
-Every day we quickly ran to out lecture room before freezing, as this required a few steps outside. The students were very interested and engaged and learned how to wrangle data, write code, execute functions, and even learned how to make a package. They learned about reproducible workflows, using tools to improve reproducibility in their own work, such as quarto, git/GitHub and targets. Also, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards. One evening we had a fun exercise, where we went through journals searching if the authors provided data and code for their studies and analysis. While the work was fun and the students did not want to stop, the results was disappointing, as we did not find a lot of data and code that was accessible. Mid week, we visited the [Villreinsenter](https://villrein.no/norsk-villreinsenter/) at Hjerkinn and afterwards hike through deep snow to a little top and had a deserved break.
+Every day we quickly ran to our lecture room before freezing, as this required a few steps outside. The students were very interested and engaged and learned how to wrangle data, write code, execute functions, and even learned how to make a package. They learned about reproducible workflows, using tools to improve reproducibility in their own work, such as quarto, git/GitHub and targets. Also, they learned about GBIF, Darwin Core data standards and what it takes to meet the FAIR data standards. One evening we had a fun exercise, where we went through journals searching if the authors provided data and code for their studies and analysis. While the work was fun and the students did not want to stop, the results was disappointing, as we did not find a lot of data and code that was accessible. Mid week, we visited the [Villreinsenter](https://villrein.no/norsk-villreinsenter/) at Hjerkinn and afterwards hike through deep snow to a little top and had a deserved break.
 
 After five days, we left Hjerkinn tired and satisfied; full of ideas, motivation and newly aquired tools and skills to improve our work and workflows.
 
