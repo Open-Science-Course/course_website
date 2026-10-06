@@ -1,5 +1,6 @@
 ---
 title: "Courses"
+toc-expand: true
 ---
 
 We offer hands-on training on best practice methods and technologies to make research more open, reproducible and transparent. Our **courses and workshops** are centred around the life-cycle of data from planning, managing, collecting, curating, analysing, publishing, storing, sharing and reusing data. They are aimed at PhD students as well as early-career researchers in ecology, who produce their own data (i.e. collect data in the field/lab), use data from others (i.e. databases) or both.
@@ -8,9 +9,19 @@ We offer hands-on training on best practice methods and technologies to make res
 
 [Open, Reproducible and Transparent Science](https://www4.uib.no/en/studies/courses/bio940) for PhD students in 2026.
 
+## Participants
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+source("R/participant_stats.R")
+participant_stats("data/student_stats.xlsx")
+```
+
 ## Past courses and workshops
 
-### OS course 2025, Hjerkinn, Norway
+### Course - Hjerkinn, 2025
 
 The 2025 Open, Reproducible and Transparent Course in Ecology was held again at Hjerkinn between the 10th and 15th of November. This year we had 21 students participating in the course. The international group was from institutions in Norway, Sweden, Finnland, Island, UK, Northern Ireland, Austria, and Ghana. The teachers included experts on different topics from GBIF Norway (UiO), NTNU, NINA, and UiB.
 
@@ -26,7 +37,7 @@ Thank you for the wonderful week!
 
 ![View from top of Vålåsjøhøe.](images/IMG_8170.jpeg){width="2000"}
 
-### OS course 2024, Hjerkinn, Norway
+### Course - Hjerkinn, 2024
 
 The 2024 Open, Reproducible and Transparent Science in Ecology was held at Hjerkinn again between the 6.- 11. November. This year, we had an international group of 13 students from Scandinavia (Norway, Finland, and Denmark/Greenland), Switzerland and the UK.
 
@@ -36,7 +47,7 @@ After five days, we left Hjerkinn tired and satisfied, full of ideas, motivation
 
 ![Group of teachers and students on Open Science course in 2024. Photo: Erik Kusch](images/course_2024.png){width="547"}
 
-### OS course 2023, Hjerkinn, Norway
+### Course - Hjerkinn, 2023
 
 ![Group of teachers and students on Open Science course in 2023. Photo: Erik Kusch](images/DSC09723.png)
 
@@ -50,7 +61,7 @@ After five days, we left Hjerkinn tired and satisfied; full of ideas, motivation
 
 ![](images/IMG_2869.jpg)
 
-### Managing Ecological Data workshop, NØF 2023 (NMBU)
+### Workshop - Managing Ecological Data, NØF 2023
 
 We organized a workshop at the NØF 2023 conference at NMBU on *Managing ecological data: Best practices for data sharing and data reuse based on transparent and reproducible workflows*. The aim of the workshop was to illustrate what data management is and why it is important. We showed best practice in managing ecological data for sharing your own data, applying FAIR principles, and for reusing existing datasets. The workshop included hands-on training tools for sharing data and making reproducible documents.
 
@@ -58,7 +69,7 @@ The workshop was aimed at ecologists that create and/or reuse ecological data fr
 
 Organized by Aud H. Halbritter (University of Bergen), Erlend B. Nilsen (Norwegian Institute for Nature Research and Nord University, and project leader of Living Norway Ecological Data Network) and Matt Grainger (Norwegian Institute for Nature Research).
 
-### OS course 2022, Alpine Research Station Finse in Norway
+### Course - Finse Alpine Research Center, 2022
 
 ![Group of students and teacher at Open Science course in 2023 at Finse. Photo: Jens Ådne Rekkedal Haga.](images/course_2022.jpg)
 
