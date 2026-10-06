@@ -154,108 +154,183 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="course-content" class="level2">
 <h2 class="anchored" data-anchor-id="course-content">Course content</h2>
-<p>The course curriculum contains theory and interactive exercises as outlined in the table below. This is the curriculum for all the OSTE courses and workshops. The teaching material is openly available (see links below).</p>
-<table class="caption-top table">
-<tbody>
-<tr class="odd">
-<td><h1 id="topic">Topic</h1></td>
-<td><h1 id="content">Content</h1></td>
-<td><h1 id="link-to-material">Link to material</h1></td>
-</tr>
-<tr class="even">
-<td>Introduction</td>
-<td>Introduction to course</td>
-<td><a href="https://open-science-course.github.io/OS-training-material/course_intro.html#/title-slide">Presentation</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>General introduction to OS</td>
-<td><a href="https://open-science-course.github.io/OS-training-material/introduction_OS/Gentle_introduction_OS_2024.html">Presentation</a></td>
-</tr>
-<tr class="even">
-<td>Tools and approaches</td>
-<td>Data management plan, data papers and registered reports</td>
-<td><a href="https://open-science-course.github.io/OS-training-material/tools_approaches/Tools_Approaches_OS_2024.html#/title-slide">Presentation</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Executable documents with Quarto</td>
-<td><p><a href="https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_docs.html#/title-slide">Presentation</a></p>
-<p><a href="https://biostats-r.github.io/biostats/quarto/">BioST@TS quarto tutorial</a></p></td>
-</tr>
-<tr class="even">
-<td>Data life cycle and management</td>
-<td>Data life cycle</td>
-<td><a href="https://biostats-r.github.io/biostats/data_lifecycle/">BioST@TS data lifecycle</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Data handling</td>
-<td><a href="https://open-science-course.github.io/OS-training-material/data_handling/dataHandling.html#/title-slide">Presentation</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Make a function</td>
-<td><a href="https://open-science-course.github.io/OS-training-material/data_handling/functions.html#/title-slide">Presentation</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Write an R package</td>
-<td><a href="https://biostats-r.github.io/biostats/package/">BioST@TS R package tutorial</a></td>
-</tr>
-<tr class="even">
-<td>Data repositories</td>
-<td>Data discovery and access - GBIF</td>
-<td><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/Introduction%20to%20GBIF.pptx.pdf">Presentation</a></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Darwin Core and AI</td>
-<td><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/DWC%20-%20OS%20Data%20course%202025%20-%20Hjerkinn.pdf">Presentation</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p>Wonders of GBIF</p>
-<p>Biases in GBIF data</p></td>
-<td><p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/lecture1Hjerkinn.pdf">Presentation</a></p>
-<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/lecture2Hjerkinn.pdf">Presentation</a></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Living Norway R package to publish data</td>
-<td>Material</td>
-</tr>
-<tr class="even">
-<td>Reproducible workflows</td>
-<td>Reproducible workflows - targets</td>
-<td><p><a href="https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_workflows.html#/title-slide">Presentation</a></p>
-<p><a href="https://biostats-r.github.io/biostats/targets/">BioST@TS targets tutorial</a></p>
-<p><a href="https://open-science-course.github.io/OS-training-material/reproducibility/exercise_reproducibility.html#/title-slide">Reproducibility exercise</a></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Version control</td>
-<td><a href="https://biostats-r.github.io/biostats/github/">BioST@TS targets tutorial</a></td>
-</tr>
-<tr class="even">
-<td>Analysis</td>
-<td><p>Systematic reviews</p>
-<p>Meta analysis</p></td>
-<td><p><a href="https://open-science-course.github.io/OS-training-material/systematic_reviews/Systematic_Reviews.html#/title-slide">Presentation</a></p>
-<p><a href="https://open-science-course.github.io/OS-training-material/systematic_reviews/meta_analysis.html#/title-slide">Presentation</a></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>Best practice in data analysis</td>
-<td><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/best_practice_analysis/bestPracticeAnalysis.pdf">Material</a></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>Best practice for reporting scientific results</td>
-<td><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/best_practice_analysis/bestPracticeResults.pdf">Material</a></td>
-</tr>
-</tbody>
-</table>
+<p>The course curriculum contains theory and interactive exercises as outlined below. This is the curriculum for all the OS courses and workshops. The teaching material is openly available (see links below).</p>
+<style>
+.materials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1.2rem 0 1.6rem;
+}
+.topic {
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 12px;
+  padding: 0.7rem 1rem 0.15rem;
+}
+.topic h3 {
+  margin: 0.15rem 0 0.15rem;
+  padding-bottom: 0;
+  border-bottom: none;
+  font-size: 1.08rem;
+  color: #243140;
+}
+.material {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 0.2rem 1.25rem;
+  align-items: start;
+  padding: 0.55rem 0;
+  border-top: 1px solid rgba(52, 73, 102, 0.16);
+}
+.material p {
+  margin: 0;
+}
+.material-links a {
+  display: block;
+  margin: 0 0 0.2rem;
+  width: fit-content;
+}
+@media (max-width: 640px) {
+  .material {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+</style>
+<div class="materials">
+<section id="introduction" class="level3 topic">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<div class="material">
+<p>Introduction to course</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/course_intro.html#/title-slide">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>General introduction to OS</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/introduction_OS/Gentle_introduction_OS_2024.html">Presentation</a></p>
+</div>
+</div>
+</section>
+<section id="tools-and-approaches" class="level3 topic">
+<h3 class="anchored" data-anchor-id="tools-and-approaches">Tools and approaches</h3>
+<div class="material">
+<p>Data management plan, data papers and registered reports</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/tools_approaches/Tools_Approaches_OS_2024.html#/title-slide">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Executable documents with Quarto</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_docs.html#/title-slide">Presentation</a> <a href="https://biostats-r.github.io/biostats/quarto/">BioST@TS quarto tutorial</a></p>
+</div>
+</div>
+</section>
+<section id="data-life-cycle-and-management" class="level3 topic">
+<h3 class="anchored" data-anchor-id="data-life-cycle-and-management">Data life cycle and management</h3>
+<div class="material">
+<p>Data life cycle</p>
+<div class="material-links">
+<p><a href="https://biostats-r.github.io/biostats/data_lifecycle/">BioST@TS data lifecycle</a></p>
+</div>
+</div>
+<div class="material">
+<p>Data handling</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/data_handling/dataHandling.html#/title-slide">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Make a function</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/data_handling/functions.html#/title-slide">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Write an R package</p>
+<div class="material-links">
+<p><a href="https://biostats-r.github.io/biostats/package/">BioST@TS R package tutorial</a></p>
+</div>
+</div>
+</section>
+<section id="data-repositories" class="level3 topic">
+<h3 class="anchored" data-anchor-id="data-repositories">Data repositories</h3>
+<div class="material">
+<p>Data discovery and access - GBIF</p>
+<div class="material-links">
+<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/Introduction%20to%20GBIF.pptx.pdf">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Darwin Core and AI</p>
+<div class="material-links">
+<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/DWC%20-%20OS%20Data%20course%202025%20-%20Hjerkinn.pdf">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Wonders of GBIF</p>
+<div class="material-links">
+<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/lecture1Hjerkinn.pdf">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Biases in GBIF data</p>
+<div class="material-links">
+<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/lecture2Hjerkinn.pdf">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Living Norway R package to publish data</p>
+<div class="material-links">
+<p>Material</p>
+</div>
+</div>
+</section>
+<section id="reproducible-workflows" class="level3 topic">
+<h3 class="anchored" data-anchor-id="reproducible-workflows">Reproducible workflows</h3>
+<div class="material">
+<p>Reproducible workflows - targets</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_workflows.html#/title-slide">Presentation</a> <a href="https://biostats-r.github.io/biostats/targets/">BioST@TS targets tutorial</a> <a href="https://open-science-course.github.io/OS-training-material/reproducibility/exercise_reproducibility.html#/title-slide">Reproducibility exercise</a></p>
+</div>
+</div>
+<div class="material">
+<p>Version control</p>
+<div class="material-links">
+<p><a href="https://biostats-r.github.io/biostats/github/">BioST@TS targets tutorial</a></p>
+</div>
+</div>
+</section>
+<section id="analysis" class="level3 topic">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<div class="material">
+<p>Systematic reviews</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/systematic_reviews/Systematic_Reviews.html#/title-slide">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Meta analysis</p>
+<div class="material-links">
+<p><a href="https://open-science-course.github.io/OS-training-material/systematic_reviews/meta_analysis.html#/title-slide">Presentation</a></p>
+</div>
+</div>
+<div class="material">
+<p>Best practice in data analysis</p>
+<div class="material-links">
+<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/best_practice_analysis/bestPracticeAnalysis.pdf">Material</a></p>
+</div>
+</div>
+<div class="material">
+<p>Best practice for reporting scientific results</p>
+<div class="material-links">
+<p><a href="https://github.com/Open-Science-Course/OS-training-material/blob/main/best_practice_analysis/bestPracticeResults.pdf">Material</a></p>
+</div>
+</div>
+</section>
+</div>
 </section>
 <section id="other-resources" class="level2">
 <h2 class="anchored" data-anchor-id="other-resources">Other resources</h2>
