@@ -4,40 +4,64 @@ title: "Living Norway Open Science Training"
 
 ## The aim
 
-Universities, journals, and funding bodies increasingly demand **open and reproducible research practices** across the scientific community. Research data needs to be FAIR (findable, accessible, interoperable, and reusable), workflows need to be reproducible, and science needs to be transparent. All of this aims to improve the efficiency and quality of research and thus to increase the credibility of science.
-
-[We](@about_us) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open science, reproducibility and transparency in ecology.
+[We](@about_us) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open and reproducible science in ecology.
 
 ## What we do
 
 We organize [courses and workshops](courses) on Open Science for ecologists.
 
-We provide the [teaching material](course_content) that we use in the Open Science course and other courses openly available.
+We provide the [teaching material](course_content) for the Open Science course openly available.
 
 We develop [tools](course_content) to facilitate Open Science practices in our community.
 
 ## Acknowledgements
 
-Open Science Training is part of the [Living Norway Ecological Data Network](https://livingnorway.no/) and a collaboration with the University of Bergen, Nord University, GBIF Norway, Norwegian University of Science and Technology, Norwegian University of Life Science, University of Oslo and Norwegian Institute for Nature Research.
+Open Science Training is part of the [Living Norway Ecological Data Network](https://livingnorway.no/) and a collaboration with the University of Bergen, Nord University, GBIF Norway, Norwegian University of Science and Technology, University of Oslo and Norwegian Institute for Nature Research.
 
-::: {layout-ncol="3"}
-![](images/livingN.png){width="250"}
+```{=html}
+<style>
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.35rem 1.8rem;
+  margin: 1.4rem 0 0.3rem;
+}
+.partners p,
+.partners figure,
+.partners .quarto-figure {
+  margin: 0;
+}
+.partners img {
+  display: block;
+  height: 4.4rem;
+  width: auto;
+  max-width: 100%;
+}
+.partners img.logo-wide {
+  height: 3.15rem;
+}
+.partners img.logo-tall {
+  height: 5.4rem;
+}
+</style>
+```
 
-![](images/UiB_white.png){width="300"}
+::: {.partners}
+![](images/livingN.png){.logo-wide fig-alt="Living Norway Ecological Data Network"}
 
-![](images/NINA.png){width="140"}
-:::
+![](images/UiB_gray.png){.logo-wide fig-alt="University of Bergen"}
 
-::: {layout-ncol="3"}
-![](images/gbif-no.png){width="180"}
+![](images/NINA.png){fig-alt="Norwegian Institute for Nature Research"}
 
-![](images/nord.jpeg){width="200"}
+![](images/gbif-no.png){fig-alt="GBIF Norway"}
 
-![](images/ntnu_alt_versjon_uten_slagord_svart.png){width="80"}
-:::
+![](images/nord.jpeg){.logo-wide fig-alt="Nord University"}
 
-::: {layout-ncol="3"}
-![](images/uio.png){width="100"} ![](images/logo%20NMBU.png){width="140"}
+![](images/ntnu_alt_versjon_uten_slagord_svart.png){.logo-tall fig-alt="NTNU"}
+
+![](images/uio.png){.logo-tall fig-alt="University of Oslo"}
 :::
 
 ## License
