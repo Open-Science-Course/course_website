@@ -4,7 +4,7 @@ title: "Living Norway Open Science Training"
 
 ## The aim
 
-[We](@about_us) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open and reproducible science in ecology.
+[We](about_us.qmd) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open and reproducible science in ecology.
 
 ## What we do
 
@@ -48,7 +48,7 @@ Open Science Training is part of the [Living Norway Ecological Data Network](htt
 </style>
 ```
 
-::: {.partners}
+::: partners
 ![](images/livingN.png){.logo-wide fig-alt="Living Norway Ecological Data Network"}
 
 ![](images/UiB_gray.png){.logo-wide fig-alt="University of Bergen"}
