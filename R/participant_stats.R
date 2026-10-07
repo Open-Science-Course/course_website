@@ -15,6 +15,15 @@ participant_stats <- function(path) {
         degree = dat$degree[[i]]
       )
     }),
+    fields = lapply(seq_len(nrow(dat)), function(i) {
+      list(
+        year = dat$year[[i]],
+        habitat = as.list(dat$habitat[[i]]),
+        organism = as.list(dat$organism[[i]]),
+        field = as.list(dat$field[[i]])
+      )
+    }),
+    fieldGroups = research_field_groups(),
     shapes = as.character(world$adm0_a3),
     placeNames = as.list(stats::setNames(as.character(world$name), world$adm0_a3)),
     upcoming = upcoming
@@ -56,17 +65,78 @@ participant_stats <- function(path) {
             class = "os-caption",
             sprintf("The pink bar is %s, registrations for the upcoming course.", upcoming)
           )
+        ),
+        htmltools::tags$div(
+          class = "os-panel os-fields-panel",
+          htmltools::tags$p(class = "os-kicker", "Research topics"),
+          htmltools::tags$div(id = "os-stats-fields")
         )
       )
     )
 }
 
+research_field_groups <- function() {
+  list(
+    list(
+      key = "habitat",
+      label = "Habitat",
+      levels = c("Terrestrial", "Aquatic", "NA")
+    ),
+    list(
+      key = "organism",
+      label = "Organism",
+      levels = c("Animals", "Plants", "Fungi", "Microbes", "NA")
+    ),
+    list(
+      key = "field",
+      label = "Field",
+      levels = c(
+        "Conservation ecology",
+        "Community ecology",
+        "Population ecology",
+        "Ecosystem ecology",
+        "Behavioural ecology",
+        "Genetics",
+        "Biodiversity informatics",
+        "NA"
+      )
+    )
+  )
+}
+
+parse_field_values <- function(x, allowed, column) {
+  lapply(x, function(value) {
+    if (length(value) != 1 || is.na(value)) {
+      return("NA")
+    }
+    text <- trimws(as.character(value))
+    if (!nzchar(text) || toupper(text) == "NA") {
+      return("NA")
+    }
+    vals <- trimws(strsplit(text, ";", fixed = TRUE)[[1]])
+    vals <- vals[nzchar(vals)]
+    vals[toupper(vals) == "NA"] <- "NA"
+    unknown <- setdiff(vals, allowed)
+    if (length(unknown)) {
+      stop(
+        "Unknown ", column, " values: ", paste(unknown, collapse = ", "),
+        call. = FALSE
+      )
+    }
+    vals
+  })
+}
+
 read_participants <- function(path) {
   raw <- readxl::read_excel(path)
+  raw <- raw[, !grepl("^\\.\\.\\.", names(raw), perl = TRUE), drop = FALSE]
   needed <- c("Course", "Country", "Degree")
   missing <- setdiff(needed, names(raw))
   if (length(missing)) {
     stop("Participant file is missing: ", paste(missing, collapse = ", "), call. = FALSE)
+  }
+  if ("Name" %in% names(raw) || "name" %in% names(raw)) {
+    stop("Participant file still contains names. Remove the Name column before rendering.", call. = FALSE)
   }
 
   degree <- trimws(as.character(raw$Degree))
@@ -96,11 +166,23 @@ read_participants <- function(path) {
     Austria = "AUT", Germany = "DEU"
   )
 
+  groups <- research_field_groups()
+  allowed <- stats::setNames(
+    lapply(groups, `[[`, "levels"),
+    vapply(groups, `[[`, character(1), "key")
+  )
+  habitat_raw <- if ("Habitat" %in% names(raw)) raw$Habitat else rep("NA", nrow(raw))
+  organism_raw <- if ("Organism" %in% names(raw)) raw$Organism else rep("NA", nrow(raw))
+  field_raw <- if ("Field" %in% names(raw)) raw$Field else rep("NA", nrow(raw))
+
   dat <- dplyr::tibble(
     year = as.integer(raw$Course),
     country = country,
     iso = unname(iso[country]),
-    degree = degree
+    degree = degree,
+    habitat = parse_field_values(habitat_raw, allowed$habitat, "habitat"),
+    organism = parse_field_values(organism_raw, allowed$organism, "organism"),
+    field = parse_field_values(field_raw, allowed$field, "field")
   )
 
   if (any(is.na(dat$year))) {
@@ -298,8 +380,74 @@ participant_css <- function() {
 .os-label { margin-top: 0.28rem; color: #4c5d70; font-size: 0.88rem; }
 .os-split { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-top: 0.75rem; }
 .os-panel { padding: 0.95rem 1rem 0.8rem; }
-.os-years-panel { margin-top: 0.75rem; }
+.os-years-panel, .os-fields-panel { margin-top: 0.75rem; }
 .os-kicker { margin: 0 0 0.65rem; font-weight: 700; color: #344966; }
+.os-field-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem 1rem;
+}
+.os-field-group-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #4c5d70;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.os-more {
+  margin: 0.15rem 0 0;
+  padding: 0.15rem 0;
+  border: 0;
+  background: transparent;
+  color: #344966;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.os-more:hover { color: #c00ca9; }
+.os-pie-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+.os-pie {
+  width: 148px;
+  height: 148px;
+  display: block;
+}
+.os-pie-legend {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+.os-pie-item {
+  display: grid;
+  grid-template-columns: 0.7rem minmax(0, 1fr) auto;
+  gap: 0.4rem;
+  align-items: center;
+  font-size: 0.82rem;
+  color: #243140;
+}
+.os-pie-swatch {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 2px;
+}
+.os-pie-label { line-height: 1.25; }
+.os-pie-n {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: #344966;
+}
+@media (max-width: 900px) {
+  .os-field-groups { grid-template-columns: 1fr; }
+}
 .os-bar {
   display: grid;
   grid-template-columns: minmax(6.2rem, 46%) minmax(0, 1fr) 1.7rem;
@@ -407,13 +555,18 @@ participant_js <- function() {
   if (!map || !map.layerManager) return;
 
   var people = data.people || [];
+  var fields = data.fields || [];
+  var fieldGroups = data.fieldGroups || [];
   var upcoming = Number(data.upcoming);
   var year = 'all';
   var selected = null;
   var hovered = null;
   var swallow = false;
+  var degreesOpen = false;
+  var countriesOpen = false;
   var shapes = {};
   var ever = {};
+  var pieColors = ['#344966', '#DA7B93', '#5B8FA8', '#C4A35A', '#6B8F71', '#8B6B9E', '#D08B5B', '#9aa8b8'];
 
   people.forEach(function(p) { ever[p.iso] = true; });
   (data.shapes || []).forEach(function(iso) {
@@ -543,42 +696,58 @@ participant_js <- function() {
     document.getElementById('os-stat-other').textContent = subset.length - phd;
   }
 
+  function appendBarRow(node, key, n, maxN, opts) {
+    opts = opts || {};
+    var btn = document.createElement(opts.button ? 'button' : 'div');
+    if (opts.button) btn.type = 'button';
+    btn.className = 'os-bar' + (opts.selected ? ' is-selected' : '');
+    var name = document.createElement('span');
+    name.className = 'os-bar-name';
+    name.textContent = key;
+    var track = document.createElement('span');
+    track.className = 'os-bar-track';
+    var fill = document.createElement('span');
+    fill.className = 'os-bar-fill';
+    fill.style.width = (maxN ? (100 * n / maxN) : 0) + '%';
+    if (n > 0) fill.style.minWidth = '8px';
+    track.appendChild(fill);
+    var num = document.createElement('span');
+    num.className = 'os-bar-n';
+    num.textContent = n;
+    btn.appendChild(name);
+    btn.appendChild(track);
+    btn.appendChild(num);
+    if (opts.onClick) btn.addEventListener('click', opts.onClick);
+    if (opts.onEnter) btn.addEventListener('mouseenter', opts.onEnter);
+    if (opts.onLeave) btn.addEventListener('mouseleave', opts.onLeave);
+    node.appendChild(btn);
+  }
+
+  function appendMoreButton(node, hidden, open, onToggle) {
+    if (hidden <= 0) return;
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'os-more';
+    btn.textContent = open ? 'Show less' : ('Show ' + hidden + ' more');
+    btn.addEventListener('click', onToggle);
+    node.appendChild(btn);
+  }
+
   function renderBars(target, obj, isoKey) {
     var node = document.getElementById(target);
     node.replaceChildren();
     var keys = sortedKeys(obj);
     var maxN = 0;
     keys.forEach(function(k) { if (obj[k] > maxN) maxN = obj[k]; });
-    keys.forEach(function(key) {
-      var n = obj[key];
-      var btn = document.createElement(isoKey ? 'button' : 'div');
-      if (isoKey) btn.type = 'button';
-      btn.className = 'os-bar' + (isoKey && key === selected ? ' is-selected' : '');
-      var name = document.createElement('span');
-      name.className = 'os-bar-name';
-      name.textContent = key;
-      var track = document.createElement('span');
-      track.className = 'os-bar-track';
-      var fill = document.createElement('span');
-      fill.className = 'os-bar-fill';
-      fill.style.width = (maxN ? (100 * n / maxN) : 0) + '%';
-      if (n > 0) fill.style.minWidth = '8px';
-      track.appendChild(fill);
-      var num = document.createElement('span');
-      num.className = 'os-bar-n';
-      num.textContent = n;
-      btn.appendChild(name);
-      btn.appendChild(track);
-      btn.appendChild(num);
-      if (isoKey) {
-        btn.addEventListener('click', function() {
-          selected = selected === key ? null : key;
-          paint();
-        });
-        btn.addEventListener('mouseenter', function() { hovered = key; restyle(); });
-        btn.addEventListener('mouseleave', function() { if (hovered === key) hovered = null; restyle(); });
-      }
-      node.appendChild(btn);
+    var limit = 5;
+    var open = target === 'os-stats-degrees' ? degreesOpen : false;
+    var shown = open ? keys : keys.slice(0, limit);
+    shown.forEach(function(key) {
+      appendBarRow(node, key, obj[key], maxN, {});
+    });
+    appendMoreButton(node, keys.length - limit, open, function() {
+      degreesOpen = !degreesOpen;
+      paint();
     });
   }
 
@@ -657,6 +826,147 @@ participant_js <- function() {
     detail.appendChild(clear);
   }
 
+  function fieldRows() {
+    return fields.filter(function(f) {
+      return year === 'all' || Number(f.year) === year;
+    });
+  }
+
+  function asList(value) {
+    if (value == null || value === '') return ['NA'];
+    return Array.isArray(value) ? value : [value];
+  }
+
+  function groupCounts(subset, key, levels) {
+    var out = {};
+    levels.forEach(function(level) { out[level] = 0; });
+    subset.forEach(function(f) {
+      asList(f[key]).forEach(function(level) {
+        if (out[level] == null) out[level] = 0;
+        out[level] += 1;
+      });
+    });
+    return out;
+  }
+
+  function polar(cx, cy, r, angle) {
+    return [cx + r * Math.cos(angle), cy + r * Math.sin(angle)];
+  }
+
+  function pieSlice(cx, cy, r, start, end) {
+    var a0 = start - Math.PI / 2;
+    var a1 = end - Math.PI / 2;
+    var p0 = polar(cx, cy, r, a0);
+    var p1 = polar(cx, cy, r, a1);
+    var large = (end - start) > Math.PI ? 1 : 0;
+    return 'M ' + cx + ' ' + cy +
+      ' L ' + p0[0] + ' ' + p0[1] +
+      ' A ' + r + ' ' + r + ' 0 ' + large + ' 1 ' + p1[0] + ' ' + p1[1] +
+      ' Z';
+  }
+
+  function colorForLevel(level, index) {
+    if (level === 'NA') return '#9aa8b8';
+    return pieColors[index % pieColors.length];
+  }
+
+  function renderPie(target, levels, counts) {
+    var entries = levels
+      .map(function(level) { return { level: level, n: counts[level] || 0 }; })
+      .filter(function(e) { return e.n > 0; });
+    var total = 0;
+    entries.forEach(function(e) { total += e.n; });
+
+    var wrap = document.createElement('div');
+    wrap.className = 'os-pie-wrap';
+
+    var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 120 120');
+    svg.setAttribute('class', 'os-pie');
+    svg.setAttribute('role', 'img');
+
+    if (!total) {
+      var empty = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      empty.setAttribute('cx', '60');
+      empty.setAttribute('cy', '60');
+      empty.setAttribute('r', '52');
+      empty.setAttribute('fill', '#e7eef5');
+      svg.appendChild(empty);
+    } else if (entries.length === 1) {
+      var full = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      full.setAttribute('cx', '60');
+      full.setAttribute('cy', '60');
+      full.setAttribute('r', '52');
+      full.setAttribute('fill', colorForLevel(entries[0].level, 0));
+      svg.appendChild(full);
+    } else {
+      var angle = 0;
+      entries.forEach(function(entry, i) {
+        var slice = (entry.n / total) * Math.PI * 2;
+        var path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', pieSlice(60, 60, 52, angle, angle + slice));
+        path.setAttribute('fill', colorForLevel(entry.level, i));
+        path.setAttribute('stroke', '#ffffff');
+        path.setAttribute('stroke-width', '1.2');
+        svg.appendChild(path);
+        angle += slice;
+      });
+    }
+    wrap.appendChild(svg);
+
+    var legend = document.createElement('div');
+    legend.className = 'os-pie-legend';
+    entries.forEach(function(entry, i) {
+      var row = document.createElement('div');
+      row.className = 'os-pie-item';
+      var swatch = document.createElement('span');
+      swatch.className = 'os-pie-swatch';
+      swatch.style.background = colorForLevel(entry.level, i);
+      var label = document.createElement('span');
+      label.className = 'os-pie-label';
+      label.textContent = entry.level;
+      var num = document.createElement('span');
+      num.className = 'os-pie-n';
+      num.textContent = entry.n;
+      row.appendChild(swatch);
+      row.appendChild(label);
+      row.appendChild(num);
+      legend.appendChild(row);
+    });
+    wrap.appendChild(legend);
+    target.appendChild(wrap);
+  }
+
+  function renderFields() {
+    var node = document.getElementById('os-stats-fields');
+    if (!node) return;
+    node.replaceChildren();
+    var subset = fieldRows();
+    if (!subset.length) {
+      var empty = document.createElement('p');
+      empty.className = 'os-caption';
+      empty.style.margin = '0';
+      empty.textContent = year === 'all'
+        ? 'No research-topic summaries yet.'
+        : 'No research-topic summaries for ' + year + '.';
+      node.appendChild(empty);
+      return;
+    }
+    var wrap = document.createElement('div');
+    wrap.className = 'os-field-groups';
+    fieldGroups.forEach(function(group) {
+      var col = document.createElement('div');
+      col.className = 'os-field-group';
+      var label = document.createElement('p');
+      label.className = 'os-field-group-label';
+      label.textContent = group.label;
+      col.appendChild(label);
+      renderPie(col, group.levels || [], groupCounts(subset, group.key, group.levels || []));
+      wrap.appendChild(col);
+    });
+    node.appendChild(wrap);
+  }
+
   function paint() {
     var subset = rowsFor(null);
     setCards(subset);
@@ -672,6 +982,7 @@ participant_js <- function() {
     renderNamedBars('os-stats-degrees', degreeCounts, false);
     renderCountryBars(countryByName);
     renderYears();
+    renderFields();
     renderDetail();
     restyle();
     document.querySelectorAll('.os-year-btn').forEach(function(btn) {
@@ -695,34 +1006,24 @@ participant_js <- function() {
     });
     var maxN = 0;
     names.forEach(function(name) { if (countryByName[name].n > maxN) maxN = countryByName[name].n; });
-    names.forEach(function(name) {
+    var limit = 5;
+    var shown = countriesOpen ? names : names.slice(0, limit);
+    shown.forEach(function(name) {
       var item = countryByName[name];
-      var btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'os-bar' + (item.iso === selected ? ' is-selected' : '');
-      var label = document.createElement('span');
-      label.className = 'os-bar-name';
-      label.textContent = name;
-      var track = document.createElement('span');
-      track.className = 'os-bar-track';
-      var fill = document.createElement('span');
-      fill.className = 'os-bar-fill';
-      fill.style.width = (maxN ? (100 * item.n / maxN) : 0) + '%';
-      if (item.n > 0) fill.style.minWidth = '8px';
-      track.appendChild(fill);
-      var num = document.createElement('span');
-      num.className = 'os-bar-n';
-      num.textContent = item.n;
-      btn.appendChild(label);
-      btn.appendChild(track);
-      btn.appendChild(num);
-      btn.addEventListener('click', function() {
-        selected = selected === item.iso ? null : item.iso;
-        paint();
+      appendBarRow(node, name, item.n, maxN, {
+        button: true,
+        selected: item.iso === selected,
+        onClick: function() {
+          selected = selected === item.iso ? null : item.iso;
+          paint();
+        },
+        onEnter: function() { hovered = item.iso; restyle(); },
+        onLeave: function() { if (hovered === item.iso) hovered = null; restyle(); }
       });
-      btn.addEventListener('mouseenter', function() { hovered = item.iso; restyle(); });
-      btn.addEventListener('mouseleave', function() { if (hovered === item.iso) hovered = null; restyle(); });
-      node.appendChild(btn);
+    });
+    appendMoreButton(node, names.length - limit, countriesOpen, function() {
+      countriesOpen = !countriesOpen;
+      paint();
     });
   }
 
