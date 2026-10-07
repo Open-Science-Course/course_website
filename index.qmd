@@ -4,19 +4,19 @@ title: "Living Norway Open Science Training"
 
 ## The aim
 
-[We](about_us.qmd) are a group of ecologists and statisticians in Norway that want to increase the awareness of these principles in our community and provide education and teaching material on on open and reproducible science in ecology.
+[We](about_us.qmd) are a group of ecologists and statisticians in Norway who want to increase the awareness of Open Science principles in our community and provide education and teaching material on open and reproducible science in ecology.
 
 ## What we do
 
-We organize [courses and workshops](courses) on Open Science for ecologists.
+We organize [courses and workshops](courses.qmd) on Open Science for ecologists.
 
-We provide the [teaching material](course_content) for the Open Science course openly available.
+We openly provide the [teaching material](course_content.qmd) for the Open Science course.
 
-We develop [tools](course_content) to facilitate Open Science practices in our community.
+We develop [tools](course_content.qmd#tools-and-approaches) to facilitate Open Science practices in our community.
 
 ## Acknowledgements
 
-Open Science Training is part of the [Living Norway Ecological Data Network](https://livingnorway.no/) and a collaboration with the University of Bergen, Nord University, GBIF Norway, Norwegian University of Science and Technology, University of Oslo and Norwegian Institute for Nature Research.
+Open Science Training is part of the [Living Norway Ecological Data Network](https://livingnorway.no/) and a collaboration with the [University of Bergen](https://www.uib.no/en), [Nord University](https://www.nord.no/en), [GBIF Norway](https://www.gbif.no/), [Norwegian University of Science and Technology](https://www.ntnu.edu/), [University of Oslo](https://www.uio.no/english/) and [Norwegian Institute for Nature Research](https://www.nina.no/en).
 
 ```{=html}
 <style>
@@ -66,4 +66,4 @@ Open Science Training is part of the [Living Norway Ecological Data Network](htt
 
 ## License
 
-The material on this webpage is licensed under a Creative Commons Attribution-BY 4.0 International. For more information see [here](https://creativecommons.org/licenses/by/4.0/).
+The material on this webpage is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0). For more information see [creativecommons.org](https://creativecommons.org/licenses/by/4.0/).
