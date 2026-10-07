@@ -51,190 +51,185 @@ The course curriculum contains theory and interactive exercises as outlined belo
 </style>
 ```
 
-::: {.materials}
-
-::: {.topic}
+::::::::::::::::::::::::::::::::::::::::::::::: materials
+::::::: topic
 ### Introduction
 
-::: {.material}
+:::: material
 Introduction to course
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/course_intro.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 General introduction to OS
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/introduction_OS/Gentle_introduction_OS_2024.html)
 :::
-:::
-:::
+::::
+:::::::
 
-::: {.topic}
+::::::: topic
 ### Tools and approaches
 
-::: {.material}
+:::: material
 Data management plan, data papers and registered reports
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/tools_approaches/Tools_Approaches_OS_2024.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Executable documents with Quarto
 
-::: {.material-links}
-[Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_docs.html#/title-slide)
-[BioST\@TS quarto tutorial](https://biostats-r.github.io/biostats/quarto/)
+::: material-links
+[Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_docs.html#/title-slide) [BioST\@TS quarto tutorial](https://biostats-r.github.io/biostats/quarto/)
 :::
-:::
-:::
+::::
+:::::::
 
-::: {.topic}
+::::::::::: topic
 ### Data life cycle and management
 
-::: {.material}
+:::: material
 Data life cycle
 
-::: {.material-links}
+::: material-links
 [BioST\@TS data lifecycle](https://biostats-r.github.io/biostats/data_lifecycle/)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Data handling
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/data_handling/dataHandling.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Make a function
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/data_handling/functions.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Write an R package
 
-::: {.material-links}
+::: material-links
 [BioST\@TS R package tutorial](https://biostats-r.github.io/biostats/package/)
 :::
-:::
-:::
+::::
+:::::::::::
 
-::: {.topic}
+::::::::::::: topic
 ### Data repositories
 
-::: {.material}
+:::: material
 Data discovery and access - GBIF
 
-::: {.material-links}
+::: material-links
 [Presentation](https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/Introduction%20to%20GBIF.pptx.pdf)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Darwin Core and AI
 
-::: {.material-links}
+::: material-links
 [Presentation](https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/DWC%20-%20OS%20Data%20course%202025%20-%20Hjerkinn.pdf)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Wonders of GBIF
 
-::: {.material-links}
+::: material-links
 [Presentation](https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/lecture1Hjerkinn.pdf)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Biases in GBIF data
 
-::: {.material-links}
+::: material-links
 [Presentation](https://github.com/Open-Science-Course/OS-training-material/blob/main/GBIF/lecture2Hjerkinn.pdf)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Living Norway R package to publish data
 
-::: {.material-links}
+::: material-links
 Material
 :::
-:::
-:::
+::::
+:::::::::::::
 
-::: {.topic}
+::::::: topic
 ### Reproducible workflows
 
-::: {.material}
+:::: material
 Reproducible workflows - targets
 
-::: {.material-links}
-[Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_workflows.html#/title-slide)
-[BioST\@TS targets tutorial](https://biostats-r.github.io/biostats/targets/)
-[Reproducibility exercise](https://open-science-course.github.io/OS-training-material/reproducibility/exercise_reproducibility.html#/title-slide)
+::: material-links
+[Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/reproducible_workflows.html#/title-slide) [BioST\@TS targets tutorial](https://biostats-r.github.io/biostats/targets/) [Reproducibility exercise](https://open-science-course.github.io/OS-training-material/reproducibility/exercise_reproducibility.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Version control
 
-::: {.material-links}
+::: material-links
 [BioST\@TS targets tutorial](https://biostats-r.github.io/biostats/github/)
 :::
-:::
-:::
+::::
+:::::::
 
-::: {.topic}
+::::::::::: topic
 ### Analysis
 
-::: {.material}
+:::: material
 Systematic reviews
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/systematic_reviews/Systematic_Reviews.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Meta analysis
 
-::: {.material-links}
+::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/systematic_reviews/meta_analysis.html#/title-slide)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Best practice in data analysis
 
-::: {.material-links}
+::: material-links
 [Material](https://github.com/Open-Science-Course/OS-training-material/blob/main/best_practice_analysis/bestPracticeAnalysis.pdf)
 :::
-:::
+::::
 
-::: {.material}
+:::: material
 Best practice for reporting scientific results
 
-::: {.material-links}
+::: material-links
 [Material](https://github.com/Open-Science-Course/OS-training-material/blob/main/best_practice_analysis/bestPracticeResults.pdf)
 :::
-:::
-:::
-
-:::
+::::
+:::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Other resources
 
--   [BES guides](https://www.britishecologicalsociety.org/publications/guides-to/) The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.
+-   [BES guides](https://www.britishecologicalsociety.org/content-type/better-science-guides/) The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.
 -   [BioST\@TS](https://biostats-r.github.io/biostats/) BioST\@TS is an online platform with everything you need to know to write your thesis in R.
