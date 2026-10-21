@@ -51,7 +51,7 @@ The course curriculum contains theory and interactive exercises as outlined belo
 </style>
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::: materials
+::::::::::::::::::::::::::::::::::::::::::::::::: materials
 ::::::: topic
 ### Introduction
 
@@ -64,7 +64,7 @@ Introduction to course
 ::::
 
 :::: material
-General introduction to OS
+General introduction to Open Science
 
 ::: material-links
 [Presentation](https://open-science-course.github.io/OS-training-material/introduction_OS/Gentle_introduction_OS_2024.html)
@@ -99,7 +99,7 @@ Executable documents with Quarto
 Data life cycle
 
 ::: material-links
-[BioST\@TS data lifecycle](https://biostats-r.github.io/biostats/data_lifecycle/)
+[BioST\@TS data life cycle](https://biostats-r.github.io/biostats/data_lifecycle/)
 :::
 ::::
 
@@ -172,7 +172,7 @@ Material
 ::::
 :::::::::::::
 
-::::::: topic
+::::::::: topic
 ### Reproducible workflows
 
 :::: material
@@ -184,13 +184,21 @@ Reproducible workflows - targets
 ::::
 
 :::: material
-Version control
+Version control - Git/GitHub
 
 ::: material-links
 [BioST\@TS targets tutorial](https://biostats-r.github.io/biostats/github/)
 :::
 ::::
-:::::::
+
+:::: material
+Reproducible environments
+
+::: material-links
+Material
+:::
+::::
+:::::::::
 
 ::::::::::: topic
 ### Analysis
@@ -227,7 +235,7 @@ Best practice for reporting scientific results
 :::
 ::::
 :::::::::::
-:::::::::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Other resources
 
