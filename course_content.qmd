@@ -198,6 +198,14 @@ Reproducible environments
 [Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/intro-reproducible-environment.html)
 :::
 ::::
+
+:::: material
+Large data sets
+
+::: material-links
+[Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/larger-than-RAM.html)
+:::
+::::
 :::::::::
 
 ::::::::::: topic
