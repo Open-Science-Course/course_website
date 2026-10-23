@@ -195,7 +195,7 @@ Version control - Git/GitHub
 Reproducible environments
 
 ::: material-links
-Material
+[Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/intro-reproducible-environment.html)
 :::
 ::::
 :::::::::
