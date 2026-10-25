@@ -299,5 +299,40 @@
     "title": "Courses",
     "section": "Participants",
     "text": "Participants\n\n\n\n\nSince 2022, 78 people have taken part, from 20 countries. Another 18 are registered for 2026. Most people on the list are PhD students. Choose a year to see where participants came from and which degree they were working towards.\n\nAll years\n2022\n2023\n2024\n2025\n2026\n\n\n\n96\nParticipants\n\n\n21\nCountries\n\n\n74\nPhD students\n\n\n22\nOther degrees\n\n\n\n\n\n\n\n\nDegree\n\n\n\nCountries\n\n\n\n\nParticipants by year\n\nThe pink bar is 2026, registrations for the upcoming course.\n\n\nResearch topics"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "BES guides The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.\nBioST@TS BioST@TS is an online platform with everything you need to know to write your thesis in R (Working in R, Git/GitHub, Quarto, targets, and making R packages)."
+  },
+  {
+    "objectID": "resources.html#open-science-practice",
+    "href": "resources.html#open-science-practice",
+    "title": "Resources",
+    "section": "",
+    "text": "BES guides The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.\nBioST@TS BioST@TS is an online platform with everything you need to know to write your thesis in R (Working in R, Git/GitHub, Quarto, targets, and making R packages)."
+  },
+  {
+    "objectID": "resources.html#data-collection---fieldwork",
+    "href": "resources.html#data-collection---fieldwork",
+    "title": "Resources",
+    "section": "Data collection - Fieldwork",
+    "text": "Data collection - Fieldwork\nQfield Efficient field data collection tool."
+  },
+  {
+    "objectID": "resources.html#reproducible-workflows",
+    "href": "resources.html#reproducible-workflows",
+    "title": "Resources",
+    "section": "Reproducible workflows",
+    "text": "Reproducible workflows\nQuarto template A template for a thesis written in quarto."
+  },
+  {
+    "objectID": "resources.html#society-community",
+    "href": "resources.html#society-community",
+    "title": "Resources",
+    "section": "Society / Community",
+    "text": "Society / Community\nSORTEESociety for Open, Reliable, and Transparent Ecology and Evolutionary Biology"
   }
 ]
