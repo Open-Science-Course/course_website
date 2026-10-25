@@ -2,7 +2,19 @@
 title: "Resources"
 ---
 
-## Other resources
+## Open science practice
 
 -   [BES guides](https://www.britishecologicalsociety.org/content-type/better-science-guides/) The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.
--   [BioST\@TS](https://biostats-r.github.io/biostats/) BioST\@TS is an online platform with everything you need to know to write your thesis in R.
+-   [BioST\@TS](https://biostats-r.github.io/biostats/) BioST\@TS is an online platform with everything you need to know to write your thesis in R (Working in R, Git/GitHub, Quarto, targets, and making R packages).
+
+## Data collection - Fieldwork
+
+[**Qfield**](https://qfield.org/) Efficient field data collection tool.
+
+## Reproducible workflows
+
+[Quarto template](https://github.com/biostats-r/quartothesis) A template for a thesis written in quarto.
+
+## Society / Community
+
+[**SORTEE**](https://sortee.org/)Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology
