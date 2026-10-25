@@ -10,6 +10,7 @@ website:
         text: Home
       - courses.qmd
       - course_content.qmd
+      - resources.qmd
       - about_us.qmd
       - contact.qmd
   favicon: images/favicon.ico

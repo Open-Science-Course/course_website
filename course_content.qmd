@@ -51,7 +51,7 @@ The course curriculum contains theory and interactive exercises as outlined belo
 </style>
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::: materials
+::::::::::::::::::::::::::::::::::::::::::::::::::: materials
 ::::::: topic
 ### Introduction
 
@@ -172,7 +172,7 @@ Material
 ::::
 :::::::::::::
 
-::::::::: topic
+::::::::::: topic
 ### Reproducible workflows
 
 :::: material
@@ -206,7 +206,7 @@ Large data sets
 [Presentation](https://open-science-course.github.io/OS-training-material/reproducibility/larger-than-RAM.html)
 :::
 ::::
-:::::::::
+:::::::::::
 
 ::::::::::: topic
 ### Analysis
@@ -243,9 +243,4 @@ Best practice for reporting scientific results
 :::
 ::::
 :::::::::::
-:::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Other resources
-
--   [BES guides](https://www.britishecologicalsociety.org/content-type/better-science-guides/) The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.
--   [BioST\@TS](https://biostats-r.github.io/biostats/) BioST\@TS is an online platform with everything you need to know to write your thesis in R.
+:::::::::::::::::::::::::::::::::::::::::::::::::::

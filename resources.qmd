@@ -1,0 +1,8 @@
+---
+title: "Resources"
+---
+
+## Other resources
+
+-   [BES guides](https://www.britishecologicalsociety.org/content-type/better-science-guides/) The British Ecological Society has a series of guides to research excellence on topics like data management, reproducible coding and more.
+-   [BioST\@TS](https://biostats-r.github.io/biostats/) BioST\@TS is an online platform with everything you need to know to write your thesis in R.
