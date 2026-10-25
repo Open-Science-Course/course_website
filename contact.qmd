@@ -1,7 +1,0 @@
----
-title: "Contact"
----
-
-## Contact us
-
-If you want to join the network, know about courses, or ask about the teaching material, email [aud.halbritter\@uib.no](mailto:aud.halbritter@uib.no).
